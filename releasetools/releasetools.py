@@ -1,5 +1,5 @@
 # Copyright (C) 2012 The Android Open Source Project
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -25,6 +25,11 @@ def FullOTA_InstallEnd(info):
   info.script.AppendExtra('assert(run_program("/tmp/install/bin/variant_script.sh") == 0);')
   info.script.AppendExtra('ifelse(is_substring("0P6B20000", getprop("ro.boot.mid")), run_program("/sbin/sh", "-c", "sed -i \'s/ro.com.google.clientidbase=android-google/ro.com.google.clientidbase=android-verizon/g\' /system/build.prop"));')
   info.script.Unmount("/system")
+
+def FullOTA_PostValidate(info):
+  info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+  info.script.AppendExtra('run_program("/tmp/install/bin/resize2fs_static", "/dev/block/platform/msm_sdcc.1/by-name/system");');
+  info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/platform/msm_sdcc.1/by-name/system");');
 
 def FullOTA_Assertions(info):
   AddBootloaderAssertion(info, info.input_zip)
