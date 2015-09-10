@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f1d235d_8cae7b2c",
+        "filename": "amplifier/audio_amplifier.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-10T00:51:07Z",
+      "side": 1,
+      "message": "if (devices) is kind of redundant if you have switch (devices).",
+      "revId": "7f06c933320bd946dd2fe566386f3268b7bd1a1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
