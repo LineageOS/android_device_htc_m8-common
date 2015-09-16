@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1a1f67_95dc5719",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-09-16T04:43:50Z",
+      "side": 0,
+      "message": "This is in QC policy now?",
+      "revId": "233d637a190f29b198b6ee95a10fff7652d57485",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
