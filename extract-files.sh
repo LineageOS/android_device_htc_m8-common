@@ -10,10 +10,11 @@ function extract() {
         if [ -z $DEST ]; then
             DEST=$FILE
         fi
-        DIR=`dirname $FILE`
+        DIR=`dirname $DEST`
         if [ ! -d $2/$DIR ]; then
             mkdir -p $2/$DIR
         fi
+        echo "Extracting /system/$FILE ..."
         if [ "$SRC" = "adb" ]; then
             # Try CM target first
             adb pull /system/$DEST $2/$DEST
@@ -22,11 +23,10 @@ function extract() {
                 adb pull /system/$FILE $2/$DEST
             fi
         else
-            cp $SRC/system/$FILE $2/$DEST
-            # if file dot not exist try destination
-            if [ "$?" != "0" ]
-                then
+            if [ -r $SRC/system/$DEST ]; then
                 cp $SRC/system/$DEST $2/$DEST
+            else
+                cp $SRC/system/$FILE $2/$DEST
             fi
         fi
     done
@@ -48,15 +48,14 @@ else
   fi
 fi
 
-BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-rm -rf $BASE/*
-
-extract ../../$VENDOR/$DEVICE/device-proprietary-files.txt $BASE
-extract ../../$VENDOR/m8-common/proprietary-files.txt $BASE
-
 BASE=../../../vendor/$VENDOR/m8-common/proprietary
 rm -rf $BASE/*
 
+DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
+rm -rf $DEVBASE/*
+
 extract ../../$VENDOR/m8-common/common-proprietary-files.txt $BASE
+extract ../../$VENDOR/m8-common/proprietary-files.txt $DEVBASE
+extract ../../$VENDOR/$DEVICE/device-proprietary-files.txt $DEVBASE
 
 ./setup-makefiles.sh
