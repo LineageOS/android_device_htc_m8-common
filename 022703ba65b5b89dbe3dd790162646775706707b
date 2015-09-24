@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df3967d1_e0f4ecd1",
+        "filename": "extract-files.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2015-09-24T22:09:29Z",
+      "side": 1,
+      "message": "Dan, can you please confirm if this is working for the extraction of m8 blobs? This has never actually worked for me. If \u0027adb pull\u0027 fails because file doesn\u0027t exist, the script terminates immediately.",
+      "range": {
+        "startLine": 19,
+        "startChar": 12,
+        "endLine": 24,
+        "endChar": 14
+      },
+      "revId": "022703ba65b5b89dbe3dd790162646775706707b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
