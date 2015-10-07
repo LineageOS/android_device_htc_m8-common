@@ -34,6 +34,9 @@ TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 # Includes
 TARGET_SPECIFIC_HEADER_PATH := device/htc/m8-common/include
 
+# Fast Charge UI support
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.m8
+
 # NFC
 BOARD_NFC_HAL_SUFFIX := msm8974
 
