@@ -40,11 +40,6 @@ BOARD_NFC_HAL_SUFFIX := msm8974
 # SELinux
 BOARD_SEPOLICY_DIRS += device/htc/m8-common/sepolicy
 
-BOARD_SEPOLICY_UNION += \
-    cir_fw_update.te \
-    file_contexts \
-    system_app.te
-
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
 
