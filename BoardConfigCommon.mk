@@ -38,7 +38,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/m8-common/include
 BOARD_NFC_HAL_SUFFIX := msm8974
 
 # SELinux
-BOARD_SEPOLICY_DIRS += device/htc/m8-common/sepolicy
+#BOARD_SEPOLICY_DIRS += device/htc/m8-common/sepolicy
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
