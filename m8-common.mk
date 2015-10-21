@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8974
+    camera.msm8974 \
+    libcam
 
 # IRDA
 PRODUCT_BOOT_JARS += \
