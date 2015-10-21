@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     $(LOCAL_PATH)/configs/com.htc.software.market.xml:system/etc/permissions/com.htc.software.market.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    camera.msm8974
+
 # IRDA
 PRODUCT_BOOT_JARS += \
     htcirlibs
