@@ -283,6 +283,13 @@ bin/time_daemon
 
 # TZBSP
 bin/qseecomd
+lib/libdrmdiag.so
+lib/libdrmfs.so
+lib/libdrmtime.so
+lib/liboemcrypto.so
+lib/libQSEEComAPI.so
+lib/librpmb.so
+lib/libssd.so
 vendor/firmware/cmnlib.b00
 vendor/firmware/cmnlib.b01
 vendor/firmware/cmnlib.b02
@@ -293,11 +300,6 @@ vendor/firmware/keymaster/keymaster.b01
 vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster/keymaster.mdt
-vendor/lib/libdrmfs.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
 
 # Widevine
 etc/firmware/widevine.b00
@@ -305,8 +307,8 @@ etc/firmware/widevine.b01
 etc/firmware/widevine.b02
 etc/firmware/widevine.b03
 etc/firmware/widevine.mdt
-lib/libdrmdecrypt.so
 lib/drm/libfwdlockengine.so
+vendor/lib/libdrmdecrypt.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVphoneAPI.so
