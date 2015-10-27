@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
-    libcam
+    libcam \
+    libOpenCL
 
 # IRDA
 PRODUCT_BOOT_JARS += \
