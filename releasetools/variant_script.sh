@@ -21,11 +21,13 @@ if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "dwg" ]
   sed -i "s|PHONE_TYPE=UMTS|PHONE_TYPE=CDMA|g" /system/etc/gps.conf
 fi
 
-basedir="/system/blobs/$variant/"
-cd $basedir
-chmod 755 bin/*
-find . -type f | while read file; do ln -s $basedir$file /system/$file ; done
-
+# Skip symlink creation for Dual SIM variants because blobs are already in the proper location
+if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "gsm" ]; then
+  basedir="/system/blobs/$variant/"
+  cd $basedir
+  chmod 755 bin/*
+  find . -type f | while read file; do ln -s $basedir$file /system/$file ; done
+fi
 
 # Create modem firmware links based on the currently installed modem
 mkdir -p /firmware/radio
