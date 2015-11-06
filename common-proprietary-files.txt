@@ -267,10 +267,6 @@ vendor/lib/libqti-perfd-client.so
 # Sensors
 lib/hw/sensors.msm8974.so
 
-# Thermal
-bin/thermal-engine
-vendor/lib/libthermalclient.so
-
 # Time services
 bin/time_daemon
 -lib/libtime_genoff.so:vendor/lib/libtime_genoff.so
