@@ -35,9 +35,6 @@ vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libscve.so
 vendor/lib/libscve_stub.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
 
 # Audio
 etc/Bluetooth_cal.acdb
@@ -90,10 +87,8 @@ etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 lib/libalDE_REC.so
-lib/libalDE_SDE_TWO.so
 lib/libalDE.so
 lib/libalDynamicWarping_REC.so
-lib/libalDynamicWarping_SDW_TWO.so
 lib/libalDynamicWarping.so
 lib/libalIAF.so
 lib/libawb_calibration.so
@@ -202,7 +197,6 @@ vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
-vendor/lib/libmmcamera_tuning.so
 vendor/lib/libmmcamera_vd6869.so
 vendor/lib/libmmcamera_wavelet_lib.so
 vendor/lib/libmmipl.so
@@ -213,15 +207,16 @@ vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
 # GPS
-lib/libgps.utils.so
 lib/libloc_api_v02.so
 lib/libloc_core.so
 lib/libloc_ds_api.so
 lib/libloc_eng.so
+lib/libmdmdetect.so
 lib/hw/gps.default.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
+vendor/lib/libperipheral_client.so
 
 # HTC / Other
 -app/EasyAccessService/EasyAccessService.apk:app/EasyAccessService.apk
@@ -266,7 +261,7 @@ vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 
 # Qualcomm extra
-vendor/lib/libqc-opt.so
+vendor/lib/libqti-perfd-client.so
 
 # Sensors
 lib/hw/sensors.msm8974.so
@@ -274,7 +269,6 @@ lib/hw/sensors.msm8974.so
 # Thermal
 bin/thermal-engine
 vendor/lib/libthermalclient.so
-vendor/lib/libthermalioctl.so
 
 # Time services
 bin/time_daemon
@@ -282,13 +276,6 @@ bin/time_daemon
 
 # TZBSP
 bin/qseecomd
-lib/libdrmdiag.so
-lib/libdrmfs.so
-lib/libdrmtime.so
-lib/liboemcrypto.so
-lib/libQSEEComAPI.so
-lib/librpmb.so
-lib/libssd.so
 vendor/firmware/cmnlib.b00
 vendor/firmware/cmnlib.b01
 vendor/firmware/cmnlib.b02
@@ -299,15 +286,21 @@ vendor/firmware/keymaster/keymaster.b01
 vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster/keymaster.mdt
+vendor/lib/libdrmdiag.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/liboemcrypto.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/librpmb.so
+vendor/lib/libssd.so
 
 # Widevine
+lib/libdrmdecrypt.so
 etc/firmware/widevine.b00
 etc/firmware/widevine.b01
 etc/firmware/widevine.b02
 etc/firmware/widevine.b03
 etc/firmware/widevine.mdt
-lib/drm/libfwdlockengine.so
-vendor/lib/libdrmdecrypt.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
 vendor/lib/libWVphoneAPI.so
