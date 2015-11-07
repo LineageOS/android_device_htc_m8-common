@@ -38,3 +38,18 @@ LOCAL_MODULE := libOpenCL
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
 include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_C_INCLUDES := \
+    frameworks/av/include
+
+LOCAL_SRC_FILES := \
+    CameraParameters.cpp \
+    CameraParameters_EXT.cpp
+
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
+LOCAL_MODULE := libcamera_parameters_ext
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_STATIC_LIBRARY)

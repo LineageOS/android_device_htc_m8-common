@@ -35,6 +35,7 @@ TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 TARGET_SPECIFIC_HEADER_PATH := device/htc/m8-common/include
 
 # Camera
+TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_ext
 COMMON_GLOBAL_CFLAGS += -DHTC_CAMERA_HARDWARE
 COMMON_GLOBAL_CFLAGS += -DPROPERTY_PERMS_APPEND='{"htc.camera.sensor.", AID_CAMERA, 0}, {"camera.4k2k.", AID_MEDIA, 0},'
 USE_DEVICE_SPECIFIC_CAMERA := true
