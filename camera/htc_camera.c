@@ -150,11 +150,5 @@ void libEvtUnloading(void)
     }
 }
 
-void cb_event_notify_egl_sync_is_signaled_qcom(void)
-{
-    ALOGV("notify_egl_sync");
-}
-void cb_event_register_egl_sync_observer_qcom(void)
-{
-    ALOGV("register_egl_sync");
-}
+void cb_event_notify_egl_sync_is_signaled_qcom(void);
+void cb_event_register_egl_sync_observer_qcom(void);
