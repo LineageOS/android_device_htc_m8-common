@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     libcam \
     libOpenCL
 
+# Init
+PRODUCT_PACKAGES += \
+    init.target.rc
+
 # IRDA
 PRODUCT_BOOT_JARS += \
     htcirlibs
