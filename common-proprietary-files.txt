@@ -139,7 +139,7 @@ lib/libtuning_awb_ov2722_subcam.so
 lib/libtuning_awb_ov4688.so
 lib/libtuning_awb_s5k5e.so
 lib/libtuning_awb_vd6869.so
-lib/hw/camera.vendor.msm8974.so
+lib/hw/camera.msm8974.so
 vendor/lib/libchromatix_ov2722_common.so
 vendor/lib/libchromatix_ov2722_default_video.so
 vendor/lib/libchromatix_ov2722_preview.so
