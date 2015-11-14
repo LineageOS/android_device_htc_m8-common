@@ -1,2 +1,0 @@
-on init
-    export LD_PRELOAD /system/lib/libhtc_symbols.so
