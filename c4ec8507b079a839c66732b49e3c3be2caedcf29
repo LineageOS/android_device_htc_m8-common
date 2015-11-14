@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_16a5cc04",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2015-11-14T18:55:39Z",
+      "side": 1,
+      "message": "Dan, can\u0027t we move this back to init.qcom-common.rc? EyeUL needs to LD_PRELOAD /system/lib/libboringssl-compat.so, so I don\u0027t know if LD_PRELOAD can be parsed from two different places.",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 51
+      },
+      "revId": "c4ec8507b079a839c66732b49e3c3be2caedcf29",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
