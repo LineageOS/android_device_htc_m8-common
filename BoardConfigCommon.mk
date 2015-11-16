@@ -44,6 +44,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_NFC_HAL_SUFFIX := msm8974
 
 # SELinux
+include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/htc/m8-common/sepolicy
 
 # Releasetools
