@@ -1,0 +1,1 @@
+allow tee data_qsee_file:file rw_file_perms;
