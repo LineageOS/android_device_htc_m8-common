@@ -33,6 +33,8 @@
  
 /data/system/default_values	u:object_r:mpctl_data_file:s0
 
+/system/vendor/lib/libmmjpeg.so u:object_r:mediaserver:s0
+
 /sys/class/htc_sensorhub/sensor_hub/gesture_motion       u:object_r:gesture_dev:s0
 
 /sys/devices/virtual/htc_sensorhub/sensor_hub/tap2wake	 u:object_r:tap2wake_dev:s0
