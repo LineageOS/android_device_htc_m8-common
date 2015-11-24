@@ -244,6 +244,7 @@ etc/firmware/hcheck.mdt
 etc/firmware/ILP0100_IPM_Code_out.bin
 etc/firmware/ILP0100_IPM_Data_out.bin
 etc/firmware/lscbuffer_rev2.bin
+vendor/firmware/libpn544_fw.so
 
 # IRDA
 -app/CIRModule/CIRModule.apk:app/CIRModule.apk
