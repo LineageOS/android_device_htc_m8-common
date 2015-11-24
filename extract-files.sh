@@ -56,6 +56,8 @@ rm -rf $DEVBASE/*
 
 extract ../../$VENDOR/m8-common/common-proprietary-files.txt $BASE
 extract ../../$VENDOR/m8-common/proprietary-files.txt $DEVBASE
-extract ../../$VENDOR/$DEVICE/device-proprietary-files.txt $DEVBASE
+if [ -z ../../$VENDOR/$DEVICE/device-proprietary-files.txt ]; then
+    extract ../../$VENDOR/$DEVICE/device-proprietary-files.txt $DEVBASE
+fi
 
 ./setup-makefiles.sh
