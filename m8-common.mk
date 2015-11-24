@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.target.rc
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/flp.conf:system/etc/flp.conf
+
 # IRDA
 PRODUCT_BOOT_JARS += \
     htcirlibs
