@@ -22,6 +22,9 @@ $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
