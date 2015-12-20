@@ -32,7 +32,7 @@
 TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 
 # Includes
-TARGET_SPECIFIC_HEADER_PATH := device/htc/m8-common/include
+TARGET_SPECIFIC_HEADER_PATH += device/htc/m8-common/include
 
 # Camera
 COMMON_GLOBAL_CFLAGS += -DHTC_CAMERA_HARDWARE
