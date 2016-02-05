@@ -29,4 +29,7 @@
 
     <!-- Restart preview for front camera onPictureTaken -->
     <bool name="front_camera_restart_preview_onPictureTaken">true</bool>
+
+    <!-- Force maximum number of cameras -->
+    <integer name="force_max_number_of_cameras">2</integer>
 </resources>
