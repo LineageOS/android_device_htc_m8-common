@@ -636,7 +636,10 @@ static int camera_get_number_of_cameras(void)
     ALOGV("%s", __FUNCTION__);
     if (check_vendor_module())
         return 0;
-    return gVendorModule->get_number_of_cameras();
+//  return gVendorModule->get_number_of_cameras();
+//  Hard-code this instead. Nothing uses the 3rd camera and
+//  it causes issues with some apps.
+    return 2;
 }
 
 static int camera_get_camera_info(int camera_id, struct camera_info *info)
