@@ -207,28 +207,14 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
-# GPS
-lib/libgps.utils.so
-lib/libloc_api_v02.so
-lib/libloc_core.so
-lib/libloc_ds_api.so
-lib/libloc_eng.so
-lib/hw/gps.default.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-
 # HTC / Other
 -app/EasyAccessService/EasyAccessService.apk:app/EasyAccessService.apk
 bin/ATFWD-daemon
 bin/hcheck
 bin/hci_qcomm_init
 bin/hvdcp
-bin/irsc_util
 bin/mpdecision
 bin/ptt_socket_app
-bin/radish
-bin/rmt_storage
 etc/hldm.bin
 etc/hltof.bin
 etc/hltrd.bin
