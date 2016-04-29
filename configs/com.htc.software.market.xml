@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2014 The CyanogenMod Project
+     Copyright (C) 2016 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,15 +15,16 @@
      limitations under the License.
 -->
 
-<!-- This is the standard set of features for devices that support
-     Android Market filter -->
+<!-- This is the standard set of features for devices that support Android Market filter. -->
 <permissions>
     <feature name="com.htc.software.HTC" />
-    <feature name="com.htc.software.Sense6.0" />
+    <feature name="com.htc.software.Sense7.0" />
     <feature name="com.htc.software.M8WL" />
-    <feature name="com.htc.software.Verizon" />
+    <feature name="com.htc.software.M8WHL" />
     <feature name="com.htc.software.WWE" />
     <feature name="com.htc.software.PlayGroup1" />
     <feature name="com.htc.software.hdk" />
     <feature name="com.htc.software.hdk2" />
+    <feature name="com.htc.software.hdk3" />
+    <feature name="com.htc.software.IHSense" />
 </permissions>
