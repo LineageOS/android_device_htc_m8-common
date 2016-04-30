@@ -261,7 +261,7 @@ etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 
 # HTC / Other
--app/EasyAccessService/EasyAccessService.apk:app/EasyAccessService.apk
+-app/EasyAccessService/EasyAccessService.apk
 bin/ATFWD-daemon
 bin/hcheck
 bin/hvdcp
@@ -273,7 +273,7 @@ etc/firmware/hcheck.b03
 etc/firmware/hcheck.mdt
 
 # IRDA
--app/CIRModule/CIRModule.apk:app/CIRModule.apk
+-app/CIRModule/CIRModule.apk
 bin/cir_fw_update
 etc/cir.img
 -framework/htcirlibs.jar
@@ -311,7 +311,7 @@ lib/hw/sensors.msm8974.so
 
 # Time services
 bin/time_daemon
--lib/libtime_genoff.so:vendor/lib/libtime_genoff.so
+-lib/libtime_genoff.so
 
 # WLAN firmware
 vendor/firmware/wcnss.b00
