@@ -1,34 +1,5 @@
 # Common proprietary files
 
-# Adreno GPU
-etc/firmware/a225p5_pm4.fw
-etc/firmware/a225_pfp.fw
-etc/firmware/a225_pm4.fw
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libc2d30.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libOpenVG.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/librs_adreno.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/libsc-a3xx.so
-
 # ADSP-RPC / Vision
 bin/adsprpcd
 vendor/lib/libadsprpc.so
@@ -37,7 +8,7 @@ vendor/lib/libfastcvopt.so
 vendor/lib/libscve.so
 vendor/lib/libscve_stub.so
 
-# Audio
+# Audio ACDB
 etc/Bluetooth_cal.acdb
 etc/Bluetooth_cal_recovery.acdb
 etc/General_cal.acdb
@@ -46,9 +17,8 @@ etc/Handset_cal.acdb
 etc/Hdmi_cal.acdb
 etc/Headset_cal.acdb
 etc/Speaker_cal.acdb
-etc/RT5501
-etc/sound_mfg_DMIC.txt
-etc/sound_mfg.txt
+
+# Audio amplifier
 etc/tfa/playback.drc
 etc/tfa/playback.eq
 etc/tfa/playback_l.drc
@@ -71,6 +41,11 @@ etc/tfa/voip_l.drc
 etc/tfa/voip_l.eq
 etc/tfa/voip_l.preset
 etc/tfa/voip.preset
+etc/RT5501
+etc/sound_mfg_DMIC.txt
+etc/sound_mfg.txt
+
+# Audio libraries
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbmapper.so
 vendor/lib/libacdbrtac.so
@@ -80,13 +55,12 @@ vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libqcreverb.so
 
+# Bluetooth
+bin/hci_qcomm_init
+
 # Camera
 bin/mm-qcamera-app
 bin/mm-qcamera-daemon
-etc/firmware/alIAF_InData_4M2M
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
 lib/libalDE_REC.so
 lib/libalDE.so
 lib/libalDynamicWarping_REC.so
@@ -140,27 +114,6 @@ lib/libtuning_awb_ov4688.so
 lib/libtuning_awb_s5k5e.so
 lib/libtuning_awb_vd6869.so
 lib/hw/camera.vendor.msm8974.so
-vendor/lib/libchromatix_ov2722_common.so
-vendor/lib/libchromatix_ov2722_default_video.so
-vendor/lib/libchromatix_ov2722_preview.so
-vendor/lib/libchromatix_ov2722_subcam_common.so
-vendor/lib/libchromatix_ov2722_subcam_default_video.so
-vendor/lib/libchromatix_ov2722_subcam_preview.so
-vendor/lib/libchromatix_ov4688_common.so
-vendor/lib/libchromatix_ov4688_default_video.so
-vendor/lib/libchromatix_ov4688_hdr.so
-vendor/lib/libchromatix_ov4688_hfr_60fps.so
-vendor/lib/libchromatix_ov4688_hfr.so
-vendor/lib/libchromatix_ov4688_preview.so
-vendor/lib/libchromatix_ov4688_video_hdr.so
-vendor/lib/libchromatix_ov4688_zoe.so
-vendor/lib/libchromatix_s5k5e_common.so
-vendor/lib/libchromatix_s5k5e_default_video.so
-vendor/lib/libchromatix_s5k5e_hdr.so
-vendor/lib/libchromatix_s5k5e_preview.so
-vendor/lib/libchromatix_vd6869_common.so
-vendor/lib/libchromatix_vd6869_default_video.so
-vendor/lib/libchromatix_vd6869_preview.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -207,25 +160,117 @@ vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 
+# Camera chromatix
+vendor/lib/libchromatix_ov2722_common.so
+vendor/lib/libchromatix_ov2722_default_video.so
+vendor/lib/libchromatix_ov2722_preview.so
+vendor/lib/libchromatix_ov2722_subcam_common.so
+vendor/lib/libchromatix_ov2722_subcam_default_video.so
+vendor/lib/libchromatix_ov2722_subcam_preview.so
+vendor/lib/libchromatix_ov4688_common.so
+vendor/lib/libchromatix_ov4688_default_video.so
+vendor/lib/libchromatix_ov4688_hdr.so
+vendor/lib/libchromatix_ov4688_hfr_60fps.so
+vendor/lib/libchromatix_ov4688_hfr.so
+vendor/lib/libchromatix_ov4688_preview.so
+vendor/lib/libchromatix_ov4688_video_hdr.so
+vendor/lib/libchromatix_ov4688_zoe.so
+vendor/lib/libchromatix_s5k5e_common.so
+vendor/lib/libchromatix_s5k5e_default_video.so
+vendor/lib/libchromatix_s5k5e_hdr.so
+vendor/lib/libchromatix_s5k5e_preview.so
+vendor/lib/libchromatix_vd6869_common.so
+vendor/lib/libchromatix_vd6869_default_video.so
+vendor/lib/libchromatix_vd6869_preview.so
+
+# Camera firmware
+etc/firmware/alIAF_InData_4M2M
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/ILP0100_IPM_Code_out.bin
+etc/firmware/ILP0100_IPM_Data_out.bin
+etc/firmware/lscbuffer_rev2.bin
+etc/hldm.bin
+etc/hltof.bin
+etc/hltrd.bin
+
+# DRM
+bin/qseecomd
+lib/libdrmdecrypt.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libdrmdiag.so
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/librpmb.so
+vendor/lib/libssd.so
+vendor/lib/libwvdrm_L1.so
+vendor/lib/libwvm.so
+vendor/lib/libWVphoneAPI.so
+vendor/lib/libWVStreamControlAPI_L1.so
+
+# DRM firmware
+etc/firmware/cmnlib.b00
+etc/firmware/cmnlib.b01
+etc/firmware/cmnlib.b02
+etc/firmware/cmnlib.b03
+etc/firmware/cmnlib.mdt
+etc/firmware/dxhdcp2.b00
+etc/firmware/dxhdcp2.b01
+etc/firmware/dxhdcp2.b02
+etc/firmware/dxhdcp2.b03
+etc/firmware/dxhdcp2.mdt
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.mdt
+
+# Graphics
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30-a3xx.so
+vendor/lib/libc2d30.so
+vendor/lib/libCB.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libOpenCL.so
+vendor/lib/libOpenVG.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib/librs_adreno.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libsc-a3xx.so
+
+# Graphics firmware
+etc/firmware/a225p5_pm4.fw
+etc/firmware/a225_pfp.fw
+etc/firmware/a225_pm4.fw
+etc/firmware/a300_pfp.fw
+etc/firmware/a300_pm4.fw
+etc/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
+
 # HTC / Other
 -app/EasyAccessService/EasyAccessService.apk:app/EasyAccessService.apk
 bin/ATFWD-daemon
 bin/hcheck
-bin/hci_qcomm_init
 bin/hvdcp
-bin/mpdecision
 bin/ptt_socket_app
-etc/hldm.bin
-etc/hltof.bin
-etc/hltrd.bin
 etc/firmware/hcheck.b00
 etc/firmware/hcheck.b01
 etc/firmware/hcheck.b02
 etc/firmware/hcheck.b03
 etc/firmware/hcheck.mdt
-etc/firmware/ILP0100_IPM_Code_out.bin
-etc/firmware/ILP0100_IPM_Data_out.bin
-etc/firmware/lscbuffer_rev2.bin
 
 # IRDA
 -app/CIRModule/CIRModule.apk:app/CIRModule.apk
@@ -235,7 +280,20 @@ etc/cir.img
 lib/hw/consumerir.default.so
 lib/libhtcirinterface_jni.so
 
+# Keymaster firmware
+vendor/firmware/keymaster/keymaster.b00
+vendor/firmware/keymaster/keymaster.b01
+vendor/firmware/keymaster/keymaster.b02
+vendor/firmware/keymaster/keymaster.b03
+vendor/firmware/keymaster/keymaster.mdt
+
 # Media
+vendor/lib/libDivxDrm.so
+vendor/lib/libI420colorconvert.so
+vendor/lib/libmm-color-convertor.so
+vendor/lib/libSHIMDivxDrm.so
+
+# Media firmware
 etc/firmware/venus.b00
 etc/firmware/venus.b01
 etc/firmware/venus.b02
@@ -243,10 +301,9 @@ etc/firmware/venus.b03
 etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
 
-# Qualcomm extra
+# Perf
+bin/mpdecision
 vendor/lib/libqti-perfd-client.so
 
 # Sensors
@@ -255,42 +312,6 @@ lib/hw/sensors.msm8974.so
 # Time services
 bin/time_daemon
 -lib/libtime_genoff.so:vendor/lib/libtime_genoff.so
-
-# TZBSP
-bin/qseecomd
-vendor/firmware/cmnlib.b00
-vendor/firmware/cmnlib.b01
-vendor/firmware/cmnlib.b02
-vendor/firmware/cmnlib.b03
-vendor/firmware/cmnlib.mdt
-vendor/firmware/keymaster/keymaster.b00
-vendor/firmware/keymaster/keymaster.b01
-vendor/firmware/keymaster/keymaster.b02
-vendor/firmware/keymaster/keymaster.b03
-vendor/firmware/keymaster/keymaster.mdt
-vendor/lib/libdrmdiag.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
-
-# Widevine
-lib/libdrmdecrypt.so
-etc/firmware/widevine.b00
-etc/firmware/widevine.b01
-etc/firmware/widevine.b02
-etc/firmware/widevine.b03
-etc/firmware/widevine.mdt
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
-vendor/lib/libDivxDrm.so
-vendor/lib/libSHIMDivxDrm.so
-vendor/lib/libWVphoneAPI.so
-vendor/lib/libWVStreamControlAPI_L1.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
 
 # WLAN firmware
 vendor/firmware/wcnss.b00
