@@ -1,3 +1,2 @@
 type gesture_dev, file_type;
 type hcheck_data_file, file_type;
-type tap2wake_dev, file_type;

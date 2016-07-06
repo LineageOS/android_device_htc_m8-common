@@ -261,7 +261,6 @@ etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
 
 # HTC / Other
--app/EasyAccessService/EasyAccessService.apk
 bin/ATFWD-daemon
 bin/hcheck
 bin/hvdcp
