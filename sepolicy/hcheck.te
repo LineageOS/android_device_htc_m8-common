@@ -2,8 +2,9 @@ type hcheck, domain;
 type hcheck_exec, exec_type, file_type;
 init_daemon_domain(hcheck)
 
-allow hcheck data_qsee_file:dir rw_dir_perms;
+allow hcheck data_qsee_file:dir { rw_dir_perms setattr };
 allow hcheck data_qsee_file:file rw_file_perms;
 allow hcheck hcheck_data_file:dir create_dir_perms;
 allow hcheck hcheck_data_file:file create_file_perms;
+allow hcheck shell_exec:file { execute execute_no_trans open read };
 allow hcheck tee_device:chr_file rw_file_perms;
