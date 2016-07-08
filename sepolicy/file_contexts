@@ -9,6 +9,8 @@
 /dev/tfa9887			u:object_r:audio_device:s0
 /dev/tfa9887l			u:object_r:audio_device:s0
 
+/dev/htc_diag			u:object_r:htc_diag_device:s0
+/dev/radio			u:object_r:qcril_device:s0
 /dev/rfkill			u:object_r:bluetooth_device:s0
 /dev/time_helper		u:object_r:time_helper_device:s0
 /dev/ttyHSL1                    u:object_r:console_device:s0
@@ -18,7 +20,9 @@
 /data/cam_socket[0-9]		u:object_r:camera_socket:s0
 /data/hdcp(/.*)?		u:object_r:hcheck_data_file:s0
 /data/OTPData.dat		u:object_r:camera_data_file:s0
+/data/persist			u:object_r:data_qsee_file:s0
 /data/persist/cprm(/.*)?	u:object_r:data_qsee_file:s0
+/data/persist/securemm(/.*)?	u:object_r:data_qsee_file:s0
 
 /system/bin/cir_fw_update	u:object_r:cir_fw_update_exec:s0
 /system/bin/hcheck		u:object_r:hcheck_exec:s0

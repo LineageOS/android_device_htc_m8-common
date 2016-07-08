@@ -1,2 +1,4 @@
 allow tee data_qsee_file:dir rw_dir_perms;
 allow tee data_qsee_file:file rw_file_perms;
+allow tee hcheck_data_file:dir { create rw_dir_perms rmdir };
+allow tee hcheck_data_file:file { create rw_file_perms unlink };
