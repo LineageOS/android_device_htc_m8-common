@@ -4,3 +4,15 @@ service cir_fw_update /system/bin/cir_fw_update -u cir.img
     user root
     group root
     oneshot
+
+service_redefine ril-daemon /system/bin/rild
+    class main
+    socket rild stream 660 root radio
+    socket sap_uim_socket1 stream 660 bluetooth bluetooth
+    socket rild-debug stream 660 radio system
+    user root
+    group radio cache inet misc audio log qcom_diag
+    disabled
+
+on property:sys.boot_completed=1
+    start ril-daemon
