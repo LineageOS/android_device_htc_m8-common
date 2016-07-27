@@ -22,6 +22,24 @@
       "revId": "dbbef68838735cee90cb9b76354762666713760b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_26cc3269",
+        "filename": "m8-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 8461
+      },
+      "writtenOn": "2016-07-27T13:33:06Z",
+      "side": 1,
+      "message": "I added it for twrp recovery, atm I don\u0027t remember if vendor/cm already includes it",
+      "parentUuid": "3fa7e38b_a68a6218",
+      "revId": "dbbef68838735cee90cb9b76354762666713760b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
