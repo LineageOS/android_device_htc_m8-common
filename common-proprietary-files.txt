@@ -288,7 +288,9 @@ vendor/firmware/keymaster.b03:vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster.mdt:vendor/firmware/keymaster/keymaster.mdt
 
 # Media
+lib/libstagefright_hdcp.so
 vendor/lib/libDivxDrm.so
+vendor/lib/libDxHdcp.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libSHIMDivxDrm.so
