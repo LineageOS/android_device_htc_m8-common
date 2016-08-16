@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fa4df85_8c3b069b",
+        "filename": "common-proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2016-08-16T06:22:03Z",
+      "side": 0,
+      "message": "This seems to be still needed.",
+      "range": {
+        "startLine": 261,
+        "startChar": 0,
+        "endLine": 262,
+        "endChar": 28
+      },
+      "revId": "20f1d8b6d9808138c10cf14ee7cbb11f038288ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
