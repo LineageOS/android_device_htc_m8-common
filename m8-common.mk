@@ -32,8 +32,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.htc.software.market.xml:system/etc/permissions/com.htc.software.market.xml
 
 # Camera
+#    camera.msm8974 \
 PRODUCT_PACKAGES += \
-    camera.msm8974 \
     Snap
 
 # Filesystem management tools
