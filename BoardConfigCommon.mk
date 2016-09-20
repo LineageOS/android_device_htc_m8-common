@@ -36,6 +36,7 @@ TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 TARGET_SPECIFIC_HEADER_PATH += device/htc/m8-common/include
 
 # Camera
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_ext
 USE_DEVICE_SPECIFIC_CAMERA := true
 
