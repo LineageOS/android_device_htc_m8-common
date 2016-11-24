@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_6f880d1f",
+        "filename": "common-proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2016-11-24T11:52:18Z",
+      "side": 1,
+      "message": "I need the proper blob from Z3 N preview to get the sha1sum.",
+      "range": {
+        "startLine": 201,
+        "startChar": 34,
+        "endLine": 201,
+        "endChar": 49
+      },
+      "revId": "40158b631b9c88dae3a856bd3b0c7b0a63fd2477",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
