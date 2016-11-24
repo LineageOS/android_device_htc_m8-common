@@ -38,6 +38,8 @@ write_headers "m8 m8d"
 
 write_makefiles "$MY_DIR"/common-proprietary-files.txt
 
+printf '\n%s\n' "\$(call inherit-product, vendor/qcom/binaries/msm8974/graphics/graphics-vendor.mk)" >> "$PRODUCTMK"
+
 write_footers
 
 # Reinitialize the helper for device
