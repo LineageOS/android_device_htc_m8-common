@@ -2,3 +2,6 @@ allow mediaserver htc_diag_device:chr_file rw_file_perms;
 allow mediaserver system_file:file execmod;
 allow mediaserver system_server:unix_stream_socket { read write };
 allow mediaserver time_helper_device:chr_file rw_file_perms;
+allow mediaserver sysfs_battery_supply:dir search;
+allow mediaserver sysfs_battery_supply:file r_file_perms;
+allow mediaserver debugfs_heaps_system:file r_file_perms;

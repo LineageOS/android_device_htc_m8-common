@@ -1,2 +1,3 @@
 type gesture_dev, file_type;
 type hcheck_data_file, file_type;
+type debugfs_heaps_system, fs_type, debugfs_type;
