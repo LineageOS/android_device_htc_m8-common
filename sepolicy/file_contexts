@@ -39,5 +39,12 @@
 
 /sys/devices/virtual/htc_sensorhub/sensor_hub/gesture_motion	 u:object_r:gesture_dev:s0
 
-/sys/devices/platform/htc_battery/power_supply/battery(/.*)? u:object_r:sysfs_battery_supply:s0
-/sys/devices/platform/htc_battery/power_supply/usb(/.*)? u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/htc_battery/power_supply/battery(/.*)?     u:object_r:sysfs_battery_supply:s0
+/sys/devices/platform/htc_battery/power_supply/usb(/.*)?         u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/htc_battery/power_supply/ac(/.*)?          u:object_r:sysfs_usb_supply:s0
+
+/sys/devices/system/cpu/cpu[0-9]/cpufreq/scaling_max_freq        u:object_r:sysfs_scaling_max_freq:s0
+/sys/devices/qpnp-vadc-ef9ba800/batt_therm                       u:object_r:sysfs_thermal:s0
+/sys/devices/qpnp-vadc-ef9ba800/emmc_therm                       u:object_r:sysfs_thermal:s0
+/sys/devices/qpnp-vadc-ef9ba800/quiet_therm                      u:object_r:sysfs_thermal:s0
+/sys/devices/fdb00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_gpuclk     u:object_r:sysfs_max_gpuclk:s0
