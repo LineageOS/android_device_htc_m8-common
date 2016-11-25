@@ -11,3 +11,5 @@ allow thermanager sysfs_thermal:{ lnk_file file } rw_file_perms;
 allow thermanager sysfs_battery_supply:dir search;
 allow thermanager sysfs_battery_supply:file rw_file_perms;
 allow thermanager sysfs_usb_supply:file rw_file_perms;
+allow thermanager sysfs_scaling_max_freq:file rw_file_perms;
+allow thermanager sysfs_kgsl_max_gpuclk:file rw_file_perms;
