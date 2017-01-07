@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa3479d7_af600336",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-01-07T23:02:26Z",
+      "side": 1,
+      "message": "title is pretty long, typically we like to keep them shorter. something like \"add metadata_block_device to extra partition\" would work",
+      "range": {
+        "startLine": 7,
+        "startChar": 72,
+        "endLine": 7,
+        "endChar": 117
+      },
+      "revId": "a0627efbedebe613107fb338a6f9b4f042709240",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_ef760b06",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-01-07T23:02:26Z",
+      "side": 1,
+      "message": "space after this",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 9
+      },
+      "revId": "a0627efbedebe613107fb338a6f9b4f042709240",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa3479d7_8f653f47",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-01-07T23:02:26Z",
+      "side": 1,
+      "message": "space before this line",
+      "revId": "a0627efbedebe613107fb338a6f9b4f042709240",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
