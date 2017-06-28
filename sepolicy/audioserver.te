@@ -1,1 +1,4 @@
-allow audioserver htc_diag_device:chr_file rw_file_perms;
+# Access htc_diag
+userdebug_or_eng(`
+  htc_diag_use(audioserver)
+')
