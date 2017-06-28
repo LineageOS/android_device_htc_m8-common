@@ -44,7 +44,6 @@
 /sys/devices/platform/htc_battery/power_supply/usb(/.*)?         u:object_r:sysfs_usb_supply:s0
 /sys/devices/platform/htc_battery/power_supply/ac(/.*)?          u:object_r:sysfs_usb_supply:s0
 
-/sys/devices/system/cpu/cpu[0-3]/cpufreq/scaling_max_freq        u:object_r:sysfs_scaling_max_freq:s0
 /sys/devices/qpnp-vadc-(.*)?/batt_therm                          u:object_r:sysfs_thermal:s0
 /sys/devices/qpnp-vadc-(.*)?/emmc_therm                          u:object_r:sysfs_thermal:s0
 /sys/devices/qpnp-vadc-(.*)?/quiet_therm                         u:object_r:sysfs_thermal:s0
