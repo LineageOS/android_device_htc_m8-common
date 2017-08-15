@@ -1,1 +1,0 @@
-allow gesture_dev sysfs:filesystem associate;
