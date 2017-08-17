@@ -1,6 +1,6 @@
 # Common proprietary files
 
-# ADSP-RPC / Vision
+# ADSP
 bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
@@ -80,6 +80,93 @@ lib/libmmcamera_rubik.so
 lib/libmmjpeg_interface.so
 lib/libposteffect.so
 lib/libqomx_core.so
+lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
+vendor/lib/libjpegdhw.so
+vendor/lib/libjpegehw.so
+vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_iface_modules.so
+vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_isp_modules.so
+vendor/lib/libmmcamera2_pproc_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_vpe_module.so
+vendor/lib/libmmcamera2_wnr_module.so
+vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_lib.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_tintless_algo.so
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libmmipl.so
+vendor/lib/libmmjpeg.so
+vendor/lib/libmmqjpeg_codec.so
+vendor/lib/liboemcamera.so
+vendor/lib/libqomx_jpegdec.so
+vendor/lib/libqomx_jpegenc.so
+
+# Camera chromatix
+vendor/lib/libchromatix_ov2722_common.so
+vendor/lib/libchromatix_ov2722_default_video.so
+vendor/lib/libchromatix_ov2722_preview.so
+vendor/lib/libchromatix_ov2722_subcam_common.so
+vendor/lib/libchromatix_ov2722_subcam_default_video.so
+vendor/lib/libchromatix_ov2722_subcam_preview.so
+vendor/lib/libchromatix_ov4688_common.so
+vendor/lib/libchromatix_ov4688_default_video.so
+vendor/lib/libchromatix_ov4688_hdr.so
+vendor/lib/libchromatix_ov4688_hfr_60fps.so
+vendor/lib/libchromatix_ov4688_hfr.so
+vendor/lib/libchromatix_ov4688_preview.so
+vendor/lib/libchromatix_ov4688_video_hdr.so
+vendor/lib/libchromatix_ov4688_zoe.so
+vendor/lib/libchromatix_s5k5e_common.so
+vendor/lib/libchromatix_s5k5e_default_video.so
+vendor/lib/libchromatix_s5k5e_hdr.so
+vendor/lib/libchromatix_s5k5e_preview.so
+vendor/lib/libchromatix_vd6869_common.so
+vendor/lib/libchromatix_vd6869_default_video.so
+vendor/lib/libchromatix_vd6869_preview.so
+
+# Camera eeproms
+vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so
+vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so
+vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so
+vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
+vendor/lib/libmmcamera_truly_cm7700_eeprom.so
+
+# Camera firmware
+etc/firmware/alIAF_InData_4M2M
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/ILP0100_IPM_Code_out.bin
+etc/firmware/ILP0100_IPM_Data_out.bin
+etc/firmware/lscbuffer_rev2.bin
+etc/hldm.bin
+etc/hltof.bin
+etc/hltrd.bin
+
+# Camera sensors
+vendor/lib/libmmcamera_ar1820.so
+vendor/lib/libmmcamera_ov2722.so
+vendor/lib/libmmcamera_ov2722_subcam.so
+vendor/lib/libmmcamera_ov4688.so
+vendor/lib/libmmcamera_ov5648_oty5f03.so
+vendor/lib/libmmcamera_ov8865_q8v18a.so
+vendor/lib/libmmcamera_s5k5e.so
+vendor/lib/libmmcamera_SKUAA_ST_gc0339.so
+vendor/lib/libmmcamera_skuab_shinetech_gc0339.so
+vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so
+vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so
+vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so
+vendor/lib/libmmcamera_sp1628.so
+vendor/lib/libmmcamera_vd6869.so
+
+# Camera sensors tuning
 lib/libtuning_aec_ar1820_video.so
 lib/libtuning_aec_ar1820_zsl.so
 lib/libtuning_aec_ov2722_hdr.so
@@ -113,89 +200,12 @@ lib/libtuning_awb_ov2722_subcam.so
 lib/libtuning_awb_ov4688.so
 lib/libtuning_awb_s5k5e.so
 lib/libtuning_awb_vd6869.so
-lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
-vendor/lib/libjpegdhw.so
-vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_modules.so
-vendor/lib/libmmcamera2_vpe_module.so
-vendor/lib/libmmcamera2_wnr_module.so
-vendor/lib/libmmcamera_ar1820.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
-vendor/lib/libmmcamera_hdr_lib.so
-vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so
-vendor/lib/libmmcamera_ov2722.so
-vendor/lib/libmmcamera_ov2722_subcam.so
-vendor/lib/libmmcamera_ov4688.so
-vendor/lib/libmmcamera_ov5648_oty5f03.so
-vendor/lib/libmmcamera_ov8865_q8v18a.so
-vendor/lib/libmmcamera_s5k5e.so
-vendor/lib/libmmcamera_SKUAA_ST_gc0339.so
-vendor/lib/libmmcamera_skuab_shinetech_gc0339.so
-vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so
-vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so
-vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so
-vendor/lib/libmmcamera_sp1628.so
-vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so
-vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so
-vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
-vendor/lib/libmmcamera_tintless_algo.so
-vendor/lib/libmmcamera_tintless_bg_pca_algo.so
-vendor/lib/libmmcamera_truly_cm7700_eeprom.so
-vendor/lib/libmmcamera_vd6869.so
-vendor/lib/libmmcamera_wavelet_lib.so
-vendor/lib/libmmipl.so
-vendor/lib/libmmjpeg.so
-vendor/lib/libmmqjpeg_codec.so
-vendor/lib/liboemcamera.so
-vendor/lib/libqomx_jpegdec.so
-vendor/lib/libqomx_jpegenc.so
 
-# Camera chromatix
-vendor/lib/libchromatix_ov2722_common.so
-vendor/lib/libchromatix_ov2722_default_video.so
-vendor/lib/libchromatix_ov2722_preview.so
-vendor/lib/libchromatix_ov2722_subcam_common.so
-vendor/lib/libchromatix_ov2722_subcam_default_video.so
-vendor/lib/libchromatix_ov2722_subcam_preview.so
-vendor/lib/libchromatix_ov4688_common.so
-vendor/lib/libchromatix_ov4688_default_video.so
-vendor/lib/libchromatix_ov4688_hdr.so
-vendor/lib/libchromatix_ov4688_hfr_60fps.so
-vendor/lib/libchromatix_ov4688_hfr.so
-vendor/lib/libchromatix_ov4688_preview.so
-vendor/lib/libchromatix_ov4688_video_hdr.so
-vendor/lib/libchromatix_ov4688_zoe.so
-vendor/lib/libchromatix_s5k5e_common.so
-vendor/lib/libchromatix_s5k5e_default_video.so
-vendor/lib/libchromatix_s5k5e_hdr.so
-vendor/lib/libchromatix_s5k5e_preview.so
-vendor/lib/libchromatix_vd6869_common.so
-vendor/lib/libchromatix_vd6869_default_video.so
-vendor/lib/libchromatix_vd6869_preview.so
-
-# Camera firmware
-etc/firmware/alIAF_InData_4M2M
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/ILP0100_IPM_Code_out.bin
-etc/firmware/ILP0100_IPM_Data_out.bin
-etc/firmware/lscbuffer_rev2.bin
-etc/hldm.bin
-etc/hltof.bin
-etc/hltrd.bin
+# Charger
+bin/hvdcp
 
 # DRM and SEE
+bin/hcheck
 bin/qseecomd
 lib/libdrmdecrypt.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
@@ -217,6 +227,11 @@ etc/firmware/dxhdcp2.b01
 etc/firmware/dxhdcp2.b02
 etc/firmware/dxhdcp2.b03
 etc/firmware/dxhdcp2.mdt
+etc/firmware/hcheck.b00
+etc/firmware/hcheck.b01
+etc/firmware/hcheck.b02
+etc/firmware/hcheck.b03
+etc/firmware/hcheck.mdt
 
 # Graphics - from onyx
 vendor/lib/egl/eglsubAndroid.so|b8a5790c5b4ba4cf0018c94066104610c821ed8e
@@ -244,17 +259,6 @@ etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-
-# HTC / Other
-bin/ATFWD-daemon
-bin/hcheck
-bin/hvdcp
-bin/ptt_socket_app
-etc/firmware/hcheck.b00
-etc/firmware/hcheck.b01
-etc/firmware/hcheck.b02
-etc/firmware/hcheck.b03
-etc/firmware/hcheck.mdt
 
 # IRDA
 -app/CIRModule/CIRModule.apk
@@ -290,6 +294,9 @@ etc/firmware/venus.mdt
 bin/mpdecision|97ffb19a25cdb0ccf2e13e776fc7e8770fbf3901
 vendor/lib/libqti-perfd-client.so
 
+# RIL
+bin/ATFWD-daemon
+
 # Sensors
 lib/hw/sensors.msm8974.so
 
@@ -311,7 +318,10 @@ etc/firmware/widevine.b02
 etc/firmware/widevine.b03
 etc/firmware/widevine.mdt
 
-# WLAN firmware
+# WiFi
+bin/ptt_socket_app
+
+# WiFi firmware
 vendor/firmware/wcnss.b00|e45f3acc13806ce9b36bdd426b35d26bae0485a3
 vendor/firmware/wcnss.b01|fdd7b80c8a9d5724904d8c860277ee1b3a329adc
 vendor/firmware/wcnss.b02|38306495d0e846c8854192c2a4aa1324ad6b9ef7
