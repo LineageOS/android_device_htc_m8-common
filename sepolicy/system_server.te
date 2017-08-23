@@ -1,2 +1,0 @@
-allow system_server cir_device:chr_file rw_file_perms;
-r_dir_file(system_server, sysfs_usb_supply)
