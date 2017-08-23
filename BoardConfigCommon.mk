@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2015-2016 The CyanogenMod Project
+#               2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -42,10 +43,6 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 
 # NFC
 BOARD_NFC_HAL_SUFFIX := msm8974
-
-# SELinux
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/htc/m8-common/sepolicy
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools

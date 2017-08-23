@@ -1,4 +1,0 @@
-type hcheck_data_file, file_type;
-type debugfs_heaps_system, fs_type, debugfs_type;
-type sysfs_gesture, fs_type, sysfs_type;
-type sysfs_max_gpuclk, fs_type, sysfs_type;
