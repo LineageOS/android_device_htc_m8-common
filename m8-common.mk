@@ -24,8 +24,7 @@ $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -34,9 +33,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.htc.software.market.xml:system/etc/permissions/com.htc.software.market.xml
 
 # Camera
-PRODUCT_PACKAGES += \
-    camera.msm8974 \
-    Snap
+#PRODUCT_PACKAGES += \
+#    camera.msm8974 \
+#    Snap
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -62,5 +61,5 @@ PRODUCT_PACKAGES += \
     Nfc
 
 # Variant linking script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
