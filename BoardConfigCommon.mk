@@ -31,7 +31,7 @@
 -include device/htc/msm8974-common/BoardConfigCommon.mk
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
+#TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 
 # Includes
 TARGET_SPECIFIC_HEADER_PATH += device/htc/m8-common/include
@@ -45,7 +45,7 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 BOARD_NFC_HAL_SUFFIX := msm8974
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
+#TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
 
 # Inherit from the proprietary version
 -include vendor/htc/m8-common/BoardConfigVendor.mk
