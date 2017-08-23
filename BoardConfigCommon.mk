@@ -42,7 +42,7 @@ TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_ext
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # NFC
-BOARD_NFC_HAL_SUFFIX := msm8974
+#BOARD_NFC_HAL_SUFFIX := msm8974
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
