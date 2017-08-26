@@ -21,7 +21,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <camera/CameraParameters.h>
-#include <camera/CameraParametersExtra.h>
 #include <system/graphics.h>
 
 namespace android {
@@ -223,10 +222,6 @@ const char CameraParameters::KEY_ZSL[] = "zsl";
 const char CameraParameters::KEY_CAMERA_MODE[] = "camera-mode";
 const char CameraParameters::KEY_SMILEINFO_BYFACE_SUPPORTED[] = "smileinfo-byface-supported";
 const char CameraParameters::ZSL_OFF[] = "off";
-
-#ifdef CAMERA_PARAMETERS_EXTRA_C
-CAMERA_PARAMETERS_EXTRA_C
-#endif
 
 CameraParameters::CameraParameters()
                 : CameraParameters_EXT(this), mMap()
