@@ -19,7 +19,6 @@
 
 #include <utils/KeyedVector.h>
 #include <utils/String8.h>
-#include <camera/CameraParametersExtra.h>
 #include <camera/CameraParameters_EXT.h>
 
 namespace android {
@@ -740,9 +739,12 @@ static const char KEY_TIME_CONS_POST_PROCESSING[];
     void setZsl(const char *sauce);
     const char *getZsl() const;
 
-#ifdef CAMERA_PARAMETERS_EXTRA_H
-CAMERA_PARAMETERS_EXTRA_H
-#endif
+    static const char KEY_SUPPORTED_BURST_NUM[];
+    static const char KEY_BURST_NUM[];
+    static const char KEY_SUPPORTED_HDR_MODES[];
+    static const char KEY_HDR_MODE[];
+    static const char HDR_MODE_OFF[];
+    static const char HDR_MODE_HDR[];
 
     /**
      * Returns the the supported preview formats as an enum given in graphics.h

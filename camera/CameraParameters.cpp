@@ -21,7 +21,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <camera/CameraParameters.h>
-#include <camera/CameraParametersExtra.h>
 #include <system/graphics.h>
 
 namespace android {
@@ -224,9 +223,13 @@ const char CameraParameters::KEY_CAMERA_MODE[] = "camera-mode";
 const char CameraParameters::KEY_SMILEINFO_BYFACE_SUPPORTED[] = "smileinfo-byface-supported";
 const char CameraParameters::ZSL_OFF[] = "off";
 
-#ifdef CAMERA_PARAMETERS_EXTRA_C
-CAMERA_PARAMETERS_EXTRA_C
-#endif
+// Other values
+const char CameraParameters::KEY_SUPPORTED_BURST_NUM[] = "supported-burst-num";
+const char CameraParameters::KEY_BURST_NUM[] = "burst-num";
+const char CameraParameters::KEY_SUPPORTED_HDR_MODES[] = "supported-hdr-modes";
+const char CameraParameters::KEY_HDR_MODE[] = "hdr-mode";
+const char CameraParameters::HDR_MODE_OFF[] = "hdr-mode-off";
+const char CameraParameters::HDR_MODE_HDR[] = "hdr-mode-hdr";
 
 CameraParameters::CameraParameters()
                 : CameraParameters_EXT(this), mMap()
