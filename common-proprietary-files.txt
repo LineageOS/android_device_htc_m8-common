@@ -131,13 +131,6 @@ vendor/lib/libchromatix_vd6869_common.so
 vendor/lib/libchromatix_vd6869_default_video.so
 vendor/lib/libchromatix_vd6869_preview.so
 
-# Camera eeproms
-vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so
-vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so
-vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so
-vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so
-vendor/lib/libmmcamera_truly_cm7700_eeprom.so
-
 # Camera firmware
 etc/firmware/alIAF_InData_4M2M
 etc/firmware/cpp_firmware_v1_1_1.fw
@@ -151,24 +144,13 @@ etc/hltof.bin
 etc/hltrd.bin
 
 # Camera sensors
-vendor/lib/libmmcamera_ar1820.so
 vendor/lib/libmmcamera_ov2722.so
 vendor/lib/libmmcamera_ov2722_subcam.so
 vendor/lib/libmmcamera_ov4688.so
-vendor/lib/libmmcamera_ov5648_oty5f03.so
-vendor/lib/libmmcamera_ov8865_q8v18a.so
 vendor/lib/libmmcamera_s5k5e.so
-vendor/lib/libmmcamera_SKUAA_ST_gc0339.so
-vendor/lib/libmmcamera_skuab_shinetech_gc0339.so
-vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so
-vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so
-vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so
-vendor/lib/libmmcamera_sp1628.so
 vendor/lib/libmmcamera_vd6869.so
 
 # Camera sensors tuning
-lib/libtuning_aec_ar1820_video.so
-lib/libtuning_aec_ar1820_zsl.so
 lib/libtuning_aec_ov2722_hdr.so
 lib/libtuning_aec_ov2722_subcam_video.so
 lib/libtuning_aec_ov2722_subcam_zsl.so
@@ -194,7 +176,6 @@ lib/libtuning_aec_vd6869_video.so
 lib/libtuning_aec_vd6869_zsl.so
 lib/libtuning_af.so
 lib/libtuning_af_lc898212_ov4688_vd6869.so
-lib/libtuning_awb_ar1820.so
 lib/libtuning_awb_ov2722.so
 lib/libtuning_awb_ov2722_subcam.so
 lib/libtuning_awb_ov4688.so
@@ -266,8 +247,6 @@ vendor/lib/libuiblur.so|12dd942092c05d978a2a2db3ea37e0b410427b52
 # Graphics firmware
 etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
 
 # IRDA
 -app/CIRModule/CIRModule.apk
@@ -324,7 +303,6 @@ vendor/lib/libsmemlog.so|6cd513534820f320b8a9369fde8b75f153ee67d0
 vendor/lib/libsystem_health_mon.so|8bf18322c3ce31eaa032bcc736419bd5a2c95a71
 
 # RIL - pinned to HTC package 6.12.401.4 version
-bin/ATFWD-daemon|f6f75a7312ec3ad87b5db477831341633468c707
 bin/radish|c6390fba7986b738f472a14c69ed0704635a485e
 bin/rmt_storage|16712c2d1ce8928c25e4ce97a05105cf7d6e4254
 vendor/lib/libxml.so|f965232d2dcb2a83d2189f4a36df644cd295086f
