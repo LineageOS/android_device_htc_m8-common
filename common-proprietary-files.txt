@@ -1,4 +1,4 @@
-# Common proprietary files
+# Common proprietary files - from HTC package 5.07.1700.15 (GPe) version, unless pinned
 
 # ADSP
 bin/adsprpcd
@@ -80,7 +80,7 @@ lib/libmmcamera_rubik.so
 lib/libmmjpeg_interface.so
 lib/libposteffect.so
 lib/libqomx_core.so
-lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
+lib/hw/camera.msm8974.so:lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -280,7 +280,7 @@ etc/firmware/venus.b04
 etc/firmware/venus.mbn
 etc/firmware/venus.mdt
 
-# Perf
+# Perf - from bacon
 bin/mpdecision|97ffb19a25cdb0ccf2e13e776fc7e8770fbf3901
 vendor/lib/libqti-perfd-client.so
 
@@ -316,7 +316,7 @@ lib/hw/sensors.msm8974.so
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 
-# Widevine
+# Widevine - from bullhead
 vendor/lib/drm/libdrmwvmplugin.so|3bee766222895f524421eb996ca6a08bcf95f19f
 vendor/lib/mediadrm/libwvdrmengine.so|301e0ef26cfc3a22efd52ebf4bb095d0a33bc68d
 vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
@@ -333,7 +333,7 @@ etc/firmware/widevine.mdt
 # WiFi
 bin/ptt_socket_app
 
-# WiFi firmware
+# WiFi firmware - pinned to HTC package 5.07.1700.6 version
 vendor/firmware/wcnss.b00|e45f3acc13806ce9b36bdd426b35d26bae0485a3
 vendor/firmware/wcnss.b01|fdd7b80c8a9d5724904d8c860277ee1b3a329adc
 vendor/firmware/wcnss.b02|38306495d0e846c8854192c2a4aa1324ad6b9ef7
