@@ -61,7 +61,6 @@ vendor/lib/libaptX-1.0.0-rel-Android21-ARMv7A.so|b03772672144d4b750a5672c2922ade
 vendor/lib/libaptXScheduler.so|6a0a2d564fde8434018b9840ce81d976b4d4ab28
 
 # Camera
-bin/mm-qcamera-app:vendor/bin/mm-qcamera-app
 bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/libalDE_REC.so:vendor/lib/libalDE_REC.so
 lib/libalDE.so:vendor/lib/libalDE.so
@@ -188,7 +187,6 @@ lib/libtuning_awb_vd6869.so:vendor/lib/libtuning_awb_vd6869.so
 bin/hvdcp:vendor/bin/hvdcp
 
 # DRM and SEE
-bin/hcheck:vendor/bin/hcheck
 bin/qseecomd:vendor/bin/qseecomd
 lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmdiag.so
@@ -209,11 +207,6 @@ etc/firmware/dxhdcp2.b01:vendor/firmware/dxhdcp2.b01
 etc/firmware/dxhdcp2.b02:vendor/firmware/dxhdcp2.b02
 etc/firmware/dxhdcp2.b03:vendor/firmware/dxhdcp2.b03
 etc/firmware/dxhdcp2.mdt:vendor/firmware/dxhdcp2.mdt
-etc/firmware/hcheck.b00:vendor/firmware/hcheck.b00
-etc/firmware/hcheck.b01:vendor/firmware/hcheck.b01
-etc/firmware/hcheck.b02:vendor/firmware/hcheck.b02
-etc/firmware/hcheck.b03:vendor/firmware/hcheck.b03
-etc/firmware/hcheck.mdt:vendor/firmware/hcheck.mdt
 
 # GPS - from bacon - LA.BF.1.1.3_rb1.13 tag
 lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
@@ -325,9 +318,6 @@ etc/firmware/widevine.b01:vendor/firmware/widevine.b01
 etc/firmware/widevine.b02:vendor/firmware/widevine.b02
 etc/firmware/widevine.b03:vendor/firmware/widevine.b03
 etc/firmware/widevine.mdt:vendor/firmware/widevine.mdt
-
-# WiFi
-bin/ptt_socket_app:vendor/bin/ptt_socket_app
 
 # WiFi firmware - pinned to HTC package 5.07.1700.6 version
 vendor/firmware/wcnss.b00|e45f3acc13806ce9b36bdd426b35d26bae0485a3
