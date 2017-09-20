@@ -189,7 +189,6 @@ bin/hvdcp
 bin/hcheck
 bin/qseecomd
 lib/libdrmdecrypt.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
