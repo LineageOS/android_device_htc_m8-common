@@ -46,17 +46,17 @@ esac
 
 # Skip copying blobs in case of Dual SIM variants because the files are already in the proper location
 if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "gsm" ]; then
-  basedir="/system/blobs/$variant/"
+  basedir="/system/vendor/blobs/$variant/"
   if [ -d $basedir ]; then
     cd $basedir
 
     for file in `find . -type f` ; do
-      mkdir -p `dirname /system/$file`
-      better_copy $file /system/$file
+      mkdir -p `dirname /system/vendor/$file`
+      better_copy $file /system/vendor/$file
     done
 
     for file in bin/* ; do
-      chmod 755 /system/$file
+      chmod 755 /system/vendor/$file
     done
   else
     echo "Expected source directory does not exist!"
