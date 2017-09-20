@@ -46,7 +46,7 @@ esac
 
 # Skip copying blobs in case of Dual SIM variants because the files are already in the proper location
 if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "gsm" ]; then
-  basedir="/system/blobs/$variant/"
+  basedir="/system/vendor/blobs/$variant/"
   if [ -d $basedir ]; then
     cd $basedir
 
