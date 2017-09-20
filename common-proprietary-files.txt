@@ -1,7 +1,7 @@
 # Common proprietary files - from HTC package 5.07.1700.15 (GPe) version, unless pinned
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
@@ -56,11 +56,11 @@ vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libqcreverb.so
 
 # Bluetooth
-bin/hci_qcomm_init
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 
 # Camera
-bin/mm-qcamera-app
-bin/mm-qcamera-daemon
+bin/mm-qcamera-app:vendor/bin/mm-qcamera-app
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
 lib/libalDE_REC.so
 lib/libalDE.so
 lib/libalDynamicWarping_REC.so
@@ -80,7 +80,7 @@ lib/libmmcamera_rubik.so
 lib/libmmjpeg_interface.so
 lib/libposteffect.so
 lib/libqomx_core.so
-lib/hw/camera.msm8974.so:lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
+lib/hw/camera.msm8974.so:vendor/lib/hw/camera.vendor.msm8974.so|19740b60ea36ac6c3573c9a431b9f223b71a59cb
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -183,12 +183,12 @@ lib/libtuning_awb_s5k5e.so
 lib/libtuning_awb_vd6869.so
 
 # Charger
-bin/hvdcp
+bin/hvdcp:vendor/bin/hvdcp
 
 # DRM and SEE
-bin/hcheck
-bin/qseecomd
-lib/libdrmdecrypt.so
+bin/hcheck:vendor/bin/hcheck
+bin/qseecomd:vendor/bin/qseecomd
+lib/libdrmdecrypt.so:vendor/lib/libdrmdecrypt.so
 vendor/lib/libdrmdiag.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
@@ -197,21 +197,21 @@ vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
 # DRM firmware
-etc/firmware/cmnlib.b00
-etc/firmware/cmnlib.b01
-etc/firmware/cmnlib.b02
-etc/firmware/cmnlib.b03
-etc/firmware/cmnlib.mdt
-etc/firmware/dxhdcp2.b00
-etc/firmware/dxhdcp2.b01
-etc/firmware/dxhdcp2.b02
-etc/firmware/dxhdcp2.b03
-etc/firmware/dxhdcp2.mdt
-etc/firmware/hcheck.b00
-etc/firmware/hcheck.b01
-etc/firmware/hcheck.b02
-etc/firmware/hcheck.b03
-etc/firmware/hcheck.mdt
+etc/firmware/cmnlib.b00:vendor/firmware/cmnlib.b00
+etc/firmware/cmnlib.b01:vendor/firmware/cmnlib.b01
+etc/firmware/cmnlib.b02:vendor/firmware/cmnlib.b02
+etc/firmware/cmnlib.b03:vendor/firmware/cmnlib.b03
+etc/firmware/cmnlib.mdt:vendor/firmware/cmnlib.mdt
+etc/firmware/dxhdcp2.b00:vendor/firmware/dxhdcp2.b00
+etc/firmware/dxhdcp2.b01:vendor/firmware/dxhdcp2.b01
+etc/firmware/dxhdcp2.b02:vendor/firmware/dxhdcp2.b02
+etc/firmware/dxhdcp2.b03:vendor/firmware/dxhdcp2.b03
+etc/firmware/dxhdcp2.mdt:vendor/firmware/dxhdcp2.mdt
+etc/firmware/hcheck.b00:vendor/firmware/hcheck.b00
+etc/firmware/hcheck.b01:vendor/firmware/hcheck.b01
+etc/firmware/hcheck.b02:vendor/firmware/hcheck.b02
+etc/firmware/hcheck.b03:vendor/firmware/hcheck.b03
+etc/firmware/hcheck.mdt:vendor/firmware/hcheck.mdt
 
 # GPS - from bacon - LA.BF.1.1.3_rb1.13 tag
 lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
@@ -244,16 +244,16 @@ vendor/lib/libscale.so|b44f44c633fa404d10e76aaa23593b516e08e2b8
 vendor/lib/libuiblur.so|12dd942092c05d978a2a2db3ea37e0b410427b52
 
 # Graphics firmware
-etc/firmware/a330_pfp.fw
-etc/firmware/a330_pm4.fw
+etc/firmware/a330_pfp.fw:vendor/firmware/a330_pfp.fw
+etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
 
 # IRDA
 -app/CIRModule/CIRModule.apk
-bin/cir_fw_update
+bin/cir_fw_update:vendor/bin/cir_fw_update
 etc/cir.img
 -framework/htcirlibs.jar
-lib/hw/consumerir.default.so
-lib/libhtcirinterface_jni.so
+lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so
+lib/libhtcirinterface_jni.so:vendor/lib/libhtcirinterface_jni.so
 
 # Keymaster firmware
 vendor/firmware/keymaster.b00:vendor/firmware/keymaster/keymaster.b00
@@ -269,20 +269,20 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libSHIMDivxDrm.so
 
 # Media firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # Perf - from bacon
-bin/mpdecision|97ffb19a25cdb0ccf2e13e776fc7e8770fbf3901
+bin/mpdecision:vendor/bin/mpdecision|97ffb19a25cdb0ccf2e13e776fc7e8770fbf3901
 vendor/lib/libqti-perfd-client.so
 
 # Qualcomm framework - pinned to HTC package 6.12.401.4 version
-bin/irsc_util|e9cc2e166f8ce6d429cc8c3fb6ec752c6661d33e
+bin/irsc_util:vendor/bin/irsc_util|e9cc2e166f8ce6d429cc8c3fb6ec752c6661d33e
 vendor/lib/libdiag.so|e9fae8d12205fe9e1744b895ec947ab03f165505
 vendor/lib/libdsi_netctrl.so|8aad0bf8ec9dd40d4437a87829551c4f21ecb4a6
 vendor/lib/libdsutils.so|e5bacd462a59568d3ed0d080aa4089d6ba93b450
@@ -302,15 +302,15 @@ vendor/lib/libsmemlog.so|6cd513534820f320b8a9369fde8b75f153ee67d0
 vendor/lib/libsystem_health_mon.so|8bf18322c3ce31eaa032bcc736419bd5a2c95a71
 
 # RIL - pinned to HTC package 6.12.401.4 version
-bin/radish|c6390fba7986b738f472a14c69ed0704635a485e
-bin/rmt_storage|16712c2d1ce8928c25e4ce97a05105cf7d6e4254
+bin/radish:vendor/bin/radish|c6390fba7986b738f472a14c69ed0704635a485e
+bin/rmt_storage:vendor/bin/rmt_storage|16712c2d1ce8928c25e4ce97a05105cf7d6e4254
 vendor/lib/libxml.so|f965232d2dcb2a83d2189f4a36df644cd295086f
 
 # Sensors
-lib/hw/sensors.msm8974.so
+lib/hw/sensors.msm8974.so:vendor/lib/hw/sensors.msm8974.so
 
 # Time services
-bin/time_daemon
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib/libtime_genoff.so
 
 # Widevine - from bullhead - NPF26F factory image
@@ -321,14 +321,14 @@ vendor/lib/libwvm.so|59c4c078f4b897ddac8f665309b7a3f25522f207
 vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
 
 # Widevine firmware
-etc/firmware/widevine.b00
-etc/firmware/widevine.b01
-etc/firmware/widevine.b02
-etc/firmware/widevine.b03
-etc/firmware/widevine.mdt
+etc/firmware/widevine.b00:vendor/firmware/widevine.b00
+etc/firmware/widevine.b01:vendor/firmware/widevine.b01
+etc/firmware/widevine.b02:vendor/firmware/widevine.b02
+etc/firmware/widevine.b03:vendor/firmware/widevine.b03
+etc/firmware/widevine.mdt:vendor/firmware/widevine.mdt
 
 # WiFi
-bin/ptt_socket_app
+bin/ptt_socket_app:vendor/bin/ptt_socket_app
 
 # WiFi firmware - pinned to HTC package 5.07.1700.6 version
 vendor/firmware/wcnss.b00|e45f3acc13806ce9b36bdd426b35d26bae0485a3
