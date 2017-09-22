@@ -106,7 +106,6 @@ const char CameraParameters::WHITE_BALANCE_DAYLIGHT[] = "daylight";
 const char CameraParameters::WHITE_BALANCE_CLOUDY_DAYLIGHT[] = "cloudy-daylight";
 const char CameraParameters::WHITE_BALANCE_TWILIGHT[] = "twilight";
 const char CameraParameters::WHITE_BALANCE_SHADE[] = "shade";
-const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "manual-cct";
 
 // Values for effect settings.
 const char CameraParameters::EFFECT_NONE[] = "none";
@@ -169,59 +168,23 @@ const char CameraParameters::FOCUS_MODE_FIXED[] = "fixed";
 const char CameraParameters::FOCUS_MODE_EDOF[] = "edof";
 const char CameraParameters::FOCUS_MODE_CONTINUOUS_VIDEO[] = "continuous-video";
 const char CameraParameters::FOCUS_MODE_CONTINUOUS_PICTURE[] = "continuous-picture";
-const char CameraParameters::FOCUS_MODE_MANUAL_POSITION[] = "manual";
 
 // Values for light fx settings
 const char CameraParameters::LIGHTFX_LOWLIGHT[] = "low-light";
 const char CameraParameters::LIGHTFX_HDR[] = "high-dynamic-range";
 
-// M8 values
-const char CameraParameters::KEY_TIME_CONS_POST_PROCESSING[] = "time-cons-post-processing";
-const char CameraParameters::KEY_OIS_MODE[] = "ois_mode";
-const char CameraParameters::KEY_APP_OIS_SETTING[] = "ois-setting";
-const char CameraParameters::KEY_OIS_SUPPORT[] = "ois_support";
-const char CameraParameters::KEY_CONTIBURST_TYPE[] = "contiburst-type";
-const char CameraParameters::KEY_CAPTURE_MODE[] = "capture-mode";
-const char CameraParameters::CAPTURE_MODE_NORMAL[] = "normal";
-const char CameraParameters::CAPTURE_MODE_CONTI_ZOE[] = "contizoe";
-const char CameraParameters::CAPTURE_MODE_CONTI_BURST[] = "contiburst";
-const char CameraParameters::CAPTURE_MODE_CONTI_BURST_ONE_SHOT[] = "contiburst-one-shot";
-const char CameraParameters::CAPTURE_MODE_HDR[] = "hdr";
-const char CameraParameters::CAPTURE_MODE_PANORAMA[] = "panorama";
-const char CameraParameters::CAPTURE_MODE_ZOE[] = "zoe";
-const char CameraParameters::CAPTURE_MODE_EIS[] = "eis";
+// HTC values
 const char CameraParameters::KEY_CONTI_BURST_STATE[] = "contiburst-state";
-const char CameraParameters::KEY_SUPPORTED_CAPTURE_MODES[] = "capture-mode-values";
-const char CameraParameters::KEY_MIN_CONTRAST[] = "contrast-min";
-const char CameraParameters::KEY_DEF_CONTRAST[] = "contrast-def";
-const char CameraParameters::KEY_MIN_SHARPNESS[] = "sharpness-min";
-const char CameraParameters::KEY_DEF_SHARPNESS[] = "sharpness-def";
-const char CameraParameters::KEY_MIN_SATURATION[] = "saturation-min";
-const char CameraParameters::KEY_DEF_SATURATION[] = "saturation-def";
-const char CameraParameters::KEY_SINGLE_ISP_OUTPUT_ENABLED[] = "single-isp-output-enabled";
-const char CameraParameters::POST_PROCESSING_ENABLE[] = "enable";
-const char CameraParameters::POST_PROCESSING_BYPASS[] = "bypass";
-const char CameraParameters::POST_PROCESSING_DELAY[] = "delay";
-const char CameraParameters::SCENE_MODE_OFF[] = "off";
 const char CameraParameters::SCENE_MODE_TEXT[] = "text";
-const char CameraParameters::BURST_MODE_LIMIT20[] = "limit-20";
-const char CameraParameters::BURST_MODE_UNLIMITED[] = "unlimited";
-const char CameraParameters::OIS_MODE_OFF[] = "off";
-const char CameraParameters::OIS_MODE_ON[] = "on";
 const char CameraParameters::CONTI_BURST_CAPTURING[] = "contiburst-capturing";
 const char CameraParameters::CONTI_BURST_CAPTURE_DONE[] = "contiburst-done";
-const char CameraParameters::APP_OIS_SETTING_FALSE[] = "false";
-const char CameraParameters::APP_OIS_SETTING_TRUE[] = "true";
 const char CameraParameters::KEY_GPU_EFFECT[] = "GPU-effect";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_0[] = "GE-param0";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_1[] = "GE-param1";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_2[] = "GE-param2";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_3[] = "GE-param3";
 const char CameraParameters::KEY_FORCE_USE_AUDIO_ENABLED[] = "forceuseaudio";
-const char CameraParameters::KEY_ZSL[] = "zsl";
-const char CameraParameters::KEY_CAMERA_MODE[] = "camera-mode";
 const char CameraParameters::KEY_SMILEINFO_BYFACE_SUPPORTED[] = "smileinfo-byface-supported";
-const char CameraParameters::ZSL_OFF[] = "off";
 
 static String8 get_forced_value(String8 key, String8 value)
 {
@@ -614,7 +577,6 @@ bool CameraParameters::isEmpty() const {
     return mMap.isEmpty();
 }
 
-
 void CameraParameters::getBrightnessLumaTargetSet(int *magic, int *sauce) const{};
 void CameraParameters::setBrightnessLumaTargetSet(int brightness, int luma) {
     char str[32];
@@ -625,4 +587,4 @@ void CameraParameters::getRawSize(int *magic, int *sauce) const{};
 void CameraParameters::setZsl(const char *sauce) { set("zsl",sauce);};
 const char *CameraParameters::getZsl() const { return get("zsl");};
 
-};
+}; // namespace android
