@@ -31,7 +31,7 @@
 -include device/htc/msm8974-common/BoardConfigCommon.mk
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
+#TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 
 # Includes
 TARGET_SPECIFIC_HEADER_PATH += device/htc/m8-common/include
