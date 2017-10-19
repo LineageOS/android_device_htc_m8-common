@@ -19,15 +19,9 @@
 set -e
 
 # Helper functions
-better_copy()
+copy()
 {
-  cp -dp "$1" "$2"
-  # symlinks don't have a context
-  if [ ! -L "$1" ]; then
-    # it is assumed that every label starts with 'u:object_r' and has no white-spaces
-    local context=`ls -Z "$1" | grep -o 'u:object_r:[^ ]*' | head -1`
-    chcon -v "$context" "$2"
-  fi
+  LD_LIBRARY_PATH=/system/lib /system/bin/toybox cp --preserve=a "$1" "$2"
 }
 
 # Detect variant and copy its specific-blobs
@@ -52,7 +46,7 @@ if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "gsm" ]
 
     for file in `find . -type f` ; do
       mkdir -p `dirname /system/vendor/$file`
-      better_copy $file /system/vendor/$file
+      copy $file /system/vendor/$file
     done
 
     for file in bin/* ; do
