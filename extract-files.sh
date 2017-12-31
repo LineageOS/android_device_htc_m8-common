@@ -71,4 +71,6 @@ setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/../$DEVICE/device-proprietary-files.txt "$SRC" "$SECTION"
 
+./../msm8974-common/extract-files.sh $@
+
 "$MY_DIR"/setup-makefiles.sh
