@@ -281,7 +281,7 @@ etc/firmware/venus.mbn:vendor/firmware/venus.mbn
 etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # Perf - from bacon
-bin/mpdecision:vendor/bin/mpdecision|97ffb19a25cdb0ccf2e13e776fc7e8770fbf3901
+bin/mpdecision:vendor/bin/mpdecision|6dc10b1506a4722e5ed3ad5c148b23f184b3dfbf
 vendor/lib/libqti-perfd-client.so
 
 # Qualcomm framework - pinned to HTC package 6.12.401.4 version
