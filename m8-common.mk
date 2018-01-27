@@ -36,10 +36,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    camera.device@1.0-impl \
-    camera.msm8974 \
-    Snap
+    camera.msm8974
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -58,7 +55,6 @@ PRODUCT_BOOT_JARS += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
     nfc.msm8974 \
     libnfc \
     libnfc_ndef \
