@@ -47,5 +47,8 @@ BOARD_NFC_HAL_SUFFIX := msm8974
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
 
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 19
+
 # Inherit from the proprietary version
 -include vendor/htc/m8-common/BoardConfigVendor.mk
