@@ -208,11 +208,6 @@ etc/firmware/dxhdcp2.b02:vendor/firmware/dxhdcp2.b02
 etc/firmware/dxhdcp2.b03:vendor/firmware/dxhdcp2.b03
 etc/firmware/dxhdcp2.mdt:vendor/firmware/dxhdcp2.mdt
 
-# FM Radio - from oneplus3 - OPR6.170623.013 system dump
--lib/vendor.qti.hardware.fm@1.0.so|a32ae5e1a604cc0fa0f1e0704616b5af4f0188a9
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|f64cc14d4c2ac1387a618ac90bd8688efd9fab1e
-vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so|8ac093a196439dc403b2fa099d838c33242efa82
-
 # GPS - from bacon - LA.BF.1.1.3_rb1.13 tag
 lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
 lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so|99a6f29860dbe0ed6fe3cbfdbb2277a63850f2c0
