@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1102add2_84cd8ce2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-03-20T09:33:20Z",
+      "side": 1,
+      "message": "Scratch this. The whole purpose of FullOTA_PostValidate commands was to be executed before backuptool, which is not going to be the case if FullOTA_InstallEnd is used.",
+      "range": {
+        "startLine": 10,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 69
+      },
+      "revId": "cd923f5358f0a1f7a26875ab81bb9541e9fa3733",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
