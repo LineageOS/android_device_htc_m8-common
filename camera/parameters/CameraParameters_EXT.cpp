@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2015-2016 The CyanogenMod Project
+ * Copyright (C) 2017-2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,12 +25,8 @@
 
 namespace android {
 
-const char CameraParameters_EXT::SCENE_MODE_BURST[] = "burst";
-const char CameraParameters_EXT::SCENE_MODE_MANUAL[] = "manual";
-const char CameraParameters_EXT::SCENE_MODE_PANORAMA[] = "panorama";
-const char CameraParameters_EXT::SCENE_MODE_PANORAMA_360[] = "panorama360";
-const char CameraParameters_EXT::SCENE_MODE_TEXT[] = "text";
-const char CameraParameters_EXT::SCENE_MODE_ZOE[] = "zoe";
+const char CameraParameters_EXT::DENOISE_ON[] = "denoise-on";
+const char CameraParameters_EXT::DENOISE_OFF[] = "denoise-off";
 const char CameraParameters_EXT::ISO_AUTO[] = "auto";
 const char CameraParameters_EXT::ISO_HJR[] = "ISO_HJR";
 const char CameraParameters_EXT::ISO_100[] = "ISO100";
@@ -37,24 +34,17 @@ const char CameraParameters_EXT::ISO_200[] = "ISO200";
 const char CameraParameters_EXT::ISO_400[] = "ISO400";
 const char CameraParameters_EXT::ISO_800[] = "ISO800";
 const char CameraParameters_EXT::ISO_1600[] = "ISO1600";
+const char CameraParameters_EXT::SCENE_MODE_BURST[] = "burst";
+const char CameraParameters_EXT::SCENE_MODE_MANUAL[] = "manual";
+const char CameraParameters_EXT::SCENE_MODE_PANORAMA[] = "panorama";
+const char CameraParameters_EXT::SCENE_MODE_PANORAMA_360[] = "panorama360";
+const char CameraParameters_EXT::SCENE_MODE_TEXT[] = "text";
+const char CameraParameters_EXT::SCENE_MODE_ZOE[] = "zoe";
 const char CameraParameters_EXT::VIDEO_HFR_OFF[] = "off";
 const char CameraParameters_EXT::VIDEO_HFR_2X[] = "60";
 const char CameraParameters_EXT::VIDEO_HFR_3X[] = "90";
 const char CameraParameters_EXT::VIDEO_HFR_4X[] = "120";
 const char CameraParameters_EXT::VIDEO_HFR_5X[] = "150";
-const char CameraParameters_EXT::KEY_FASTVIDEO_FPS60_1080P_SUPPORTED[] = "video-1080p60fps-supported";
-const char CameraParameters_EXT::KEY_SLOW_MOTION_SUPPORTED[] = "video-slow-motion-supported";
-const char CameraParameters_EXT::KEY_SLOW_MOTION_MULTIPLE[] = "slow-motion-x";
-const char CameraParameters_EXT::KEY_SLOW_MOTION_RES[] = "slow-motion-res";
-const char CameraParameters_EXT::KEY_FASTVIDEO_FPS60_SUPPORTED[] = "video-720p60fps-supported";
-const char CameraParameters_EXT::KEY_CONTIBURST_TAKE[] = "take";
-const char CameraParameters_EXT::KEY_CONTIBURST_SUPPORTED_MODE[] = "contiburst-support-mode";
-const char CameraParameters_EXT::KEY_NON_ZSL_MANUAL_MODE[] = "non-zsl-manual-mode";
-const char CameraParameters_EXT::KEY_VIDEO_MODE[] = "video-mode";
-const char CameraParameters_EXT::KEY_FORCE_USE_AUDIO_ENABLED[] = "force-use-audio-enabled";
-const char CameraParameters_EXT::KEY_SLOW_MOTION_VERSION[] = "slow-motion-version";
-const char CameraParameters_EXT::DENOISE_ON[] = "denoise-on";
-const char CameraParameters_EXT::DENOISE_OFF[] = "denoise-off";
 
 #define ORIENTATION_PORTRAIT 1
 #define ORIENTATION_LANDSCAPE 2
@@ -168,23 +158,6 @@ void CameraParameters_EXT::setPreviewFrameRateMode(const char *mode)
     mParams->set("preview-frame-rate-mode", mode);
 }
 
-void CameraParameters_EXT::setBrightnessLumaTargetSet(int brightness, int luma)
-{
-    char buf[32];
-    snprintf(buf, 32, "%d,%d", brightness, luma);
-    mParams->set("brightness-luma-target-set", buf);
-}
-
-int CameraParameters_EXT::getBrightnessLumaTargetSet(int *brightness, int *luma) const
-{
-    const char *p;
-    *brightness = *luma = -1;
-    p = mParams->get("brightness-luma-target-set");
-    if (p == 0) return -1;
-    parse_pair(p, brightness, luma, ',');
-    return 0;
-}
-
 void CameraParameters_EXT::setTouchIndexAec(int x, int y)
 {
     char buf[32];
@@ -217,40 +190,11 @@ void CameraParameters_EXT::getTouchIndexAf(int *x, int *y)
     parse_pair(p, x, y, 'x');
 }
 
-void CameraParameters_EXT::setZsl(const char *mode)
-{
-    mParams->set("zsl", mode);
-}
-
-const char * CameraParameters_EXT::getZsl() const
-{
-    return mParams->get("zsl");
-}
-
 void CameraParameters_EXT::setRawSize(int x, int y)
 {
     char buf[32];
     snprintf(buf, 32, "%dx%d", x, y);
     mParams->set("raw-size", buf);
-}
-
-void CameraParameters_EXT::getRawSize(int *x, int *y)
-{
-    const char *p;
-    *x = *y = -1;
-    p = mParams->get("raw-size");
-    if (p == 0) return;
-    parse_pair(p, x, y, 'x');
-}
-
-void CameraParameters_EXT::getMeteringAreaCenter(int *x, int *y) const
-{
-    const char *p;
-    *x = *y = -2000;
-    p = mParams->get("metering-areas");
-    parse_pair(p, x, y, 'x');
-    *x /= 2;
-    *y /= 2;
 }
 
 void CameraParameters_EXT::getSupportedHfrSizes(Vector<Size> &sizes) const
@@ -290,4 +234,3 @@ void CameraParameters_EXT::setOrientation(int orientation)
 }
 
 } // android
-
