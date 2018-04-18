@@ -174,20 +174,16 @@ const char CameraParameters::LIGHTFX_LOWLIGHT[] = "low-light";
 const char CameraParameters::LIGHTFX_HDR[] = "high-dynamic-range";
 
 // HTC values
-const char CameraParameters::KEY_CONTI_BURST_STATE[] = "contiburst-state";
-const char CameraParameters::SCENE_MODE_TEXT[] = "text";
 const char CameraParameters::CONTI_BURST_CAPTURING[] = "contiburst-capturing";
 const char CameraParameters::CONTI_BURST_CAPTURE_DONE[] = "contiburst-done";
+const char CameraParameters::KEY_CONTI_BURST_STATE[] = "contiburst-state";
+const char CameraParameters::KEY_FORCE_USE_AUDIO_ENABLED[] = "forceuseaudio";
 const char CameraParameters::KEY_GPU_EFFECT[] = "GPU-effect";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_0[] = "GE-param0";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_1[] = "GE-param1";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_2[] = "GE-param2";
 const char CameraParameters::KEY_GPU_EFFECT_PARAM_3[] = "GE-param3";
-const char CameraParameters::KEY_FORCE_USE_AUDIO_ENABLED[] = "forceuseaudio";
-const char CameraParameters::KEY_ZSL[] = "zsl";
-const char CameraParameters::KEY_CAMERA_MODE[] = "camera-mode";
 const char CameraParameters::KEY_SMILEINFO_BYFACE_SUPPORTED[] = "smileinfo-byface-supported";
-const char CameraParameters::ZSL_OFF[] = "off";
 
 static String8 get_forced_value(String8 key, String8 value)
 {
@@ -285,15 +281,6 @@ void CameraParameters::set(const char *key, const char *value)
         //XXX ALOGE("Value \"%s\"contains invalid character (= or ;)", value);
         return;
     }
-#ifdef QCOM_HARDWARE
-    // qcom cameras default to delivering an extra zero-exposure frame on HDR.
-    // The android SDK only wants one frame, so disable this unless the app
-    // explicitly asks for it
-    if (!get("hdr-need-1x")) {
-        replaceValueFor(mMap, String8("hdr-need-1x"), String8("false"));
-    }
-#endif
-
     replaceValueFor(mMap, String8(key), String8(value));
 }
 
@@ -580,15 +567,7 @@ bool CameraParameters::isEmpty() const {
     return mMap.isEmpty();
 }
 
-
 void CameraParameters::getBrightnessLumaTargetSet(int *magic, int *sauce) const{};
-void CameraParameters::setBrightnessLumaTargetSet(int brightness, int luma) {
-    char str[32];
-    snprintf(str, sizeof(str),"%d,%d", brightness, luma);
-    set("brightness-luma-target-set", str);
-};
 void CameraParameters::getRawSize(int *magic, int *sauce) const{};
-void CameraParameters::setZsl(const char *sauce) { set("zsl",sauce);};
-const char *CameraParameters::getZsl() const { return get("zsl");};
 
 }; // namespace android
