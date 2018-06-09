@@ -65,3 +65,7 @@ PRODUCT_PACKAGES += \
 # Variant linking script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2017-07-01
