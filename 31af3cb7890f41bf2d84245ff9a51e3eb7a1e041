@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "92299fd0_dd39e77a",
+        "filename": "system_prop.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-06-09T21:57:57Z",
+      "side": 1,
+      "message": "This didn\u0027t change.",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 26
+      },
+      "revId": "31af3cb7890f41bf2d84245ff9a51e3eb7a1e041",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
