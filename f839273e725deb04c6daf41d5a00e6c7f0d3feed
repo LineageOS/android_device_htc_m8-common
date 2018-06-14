@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a0a70517_2613a680",
+        "filename": "camera/parameters/CameraParameters.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 585,
+      "author": {
+        "id": 17168
+      },
+      "writtenOn": "2018-06-14T16:21:31Z",
+      "side": 1,
+      "message": "Shouldn\u0027t it be constant?",
+      "revId": "f839273e725deb04c6daf41d5a00e6c7f0d3feed",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
