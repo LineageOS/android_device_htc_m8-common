@@ -249,7 +249,7 @@ etc/firmware/a330_pm4.fw:vendor/firmware/a330_pm4.fw
 bin/cir_fw_update:vendor/bin/cir_fw_update
 etc/cir.img
 -framework/htcirlibs.jar
-lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.default.so
+lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.msm8974.so
 lib/libhtcirinterface_jni.so
 
 # Keymaster firmware
