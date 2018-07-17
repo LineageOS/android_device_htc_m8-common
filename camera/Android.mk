@@ -2,7 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES += \
-    $(LOCAL_PATH)/../include \
+    $(LOCAL_PATH)/include \
     system/media/camera/include
 
 LOCAL_SRC_FILES := \
@@ -30,6 +30,7 @@ LOCAL_SRC_FILES:= \
     CameraBase.cpp \
     CameraMetadata.cpp \
     CameraParameters.cpp \
+    CameraParameters_EXT.cpp \
     CameraUtils.cpp \
     CaptureResult.cpp \
     ICamera.cpp \

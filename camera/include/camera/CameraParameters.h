@@ -19,6 +19,7 @@
 
 #include <utils/KeyedVector.h>
 #include <utils/String8.h>
+#include <camera/CameraParameters_EXT.h>
 
 namespace android {
 
@@ -37,7 +38,7 @@ struct Size {
     }
 };
 
-class CameraParameters
+class CameraParameters : public CameraParameters_EXT
 {
 public:
     CameraParameters();
@@ -682,6 +683,28 @@ public:
     static const char LIGHTFX_LOWLIGHT[];
     // High-dynamic range mode
     static const char LIGHTFX_HDR[];
+
+    // HTC values
+    static const char KEY_CONTI_BURST_STATE[];
+    static const char SCENE_MODE_TEXT[];
+    static const char CONTI_BURST_CAPTURING[];
+    static const char CONTI_BURST_CAPTURE_DONE[];
+    static const char KEY_GPU_EFFECT[];
+    static const char KEY_GPU_EFFECT_PARAM_0[];
+    static const char KEY_GPU_EFFECT_PARAM_1[];
+    static const char KEY_GPU_EFFECT_PARAM_2[];
+    static const char KEY_GPU_EFFECT_PARAM_3[];
+    static const char KEY_FORCE_USE_AUDIO_ENABLED[];
+    static const char KEY_ZSL[];
+    static const char KEY_CAMERA_MODE[];
+    static const char KEY_SMILEINFO_BYFACE_SUPPORTED[];
+    static const char ZSL_OFF[];
+
+    void getRawSize(int *magic, int *sauce) const;
+    void getBrightnessLumaTargetSet(int *magic, int *sauce) const;
+    void setBrightnessLumaTargetSet(int brightness, int luma);
+    void setZsl(const char *sauce);
+    const char *getZsl() const;
 
     /**
      * Returns the the supported preview formats as an enum given in graphics.h
