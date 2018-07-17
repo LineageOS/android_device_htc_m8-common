@@ -23,3 +23,41 @@ LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
 #include $(BUILD_HEAPTRACKED_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES:= \
+    camera2/CaptureRequest.cpp \
+    camera2/OutputConfiguration.cpp \
+    camera2/SubmitInfo.cpp \
+    Camera.cpp \
+    CameraBase.cpp \
+    CameraMetadata.cpp \
+    CameraParameters.cpp \
+    CameraParameters2.cpp \
+    CameraUtils.cpp \
+    CaptureResult.cpp \
+    ICamera.cpp \
+    ICameraClient.cpp \
+    ICameraRecordingProxy.cpp \
+    ICameraRecordingProxyListener.cpp \
+    VendorTagDescriptor.cpp
+
+LOCAL_SHARED_LIBRARIES := \
+    libcutils \
+    libutils \
+    liblog \
+    libbinder \
+    libgui \
+    libcamera_metadata \
+    libnativewindow
+
+LOCAL_C_INCLUDES += \
+    $(LOCAL_PATH)/include \
+    system/media/private/camera/include \
+    frameworks/native/include/media/openmax
+
+LOCAL_MODULE := libshim_camera_client
+LOCAL_MODULE_TAGS := optional
+
+include $(BUILD_SHARED_LIBRARY)
