@@ -35,7 +35,9 @@ TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
 
 # Camera
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += /system/bin/mediaserver=22
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /system/bin/mediaserver=22 \
+    /system/vendor/bin/mm-qcamera-daemon=22
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # NFC
