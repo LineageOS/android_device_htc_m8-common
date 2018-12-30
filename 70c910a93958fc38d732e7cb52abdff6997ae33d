@@ -22,6 +22,30 @@
       "revId": "70c910a93958fc38d732e7cb52abdff6997ae33d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43bc7f27_c2d6c86a",
+        "filename": "overlay-lineage/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2018-12-30T21:04:26Z",
+      "side": 1,
+      "message": "Copy pasta from fw/b config.xml that I have in msm8974-common tree.",
+      "parentUuid": "5b2976c2_6dd292e2",
+      "range": {
+        "startLine": 4,
+        "startChar": 3,
+        "endLine": 4,
+        "endChar": 50
+      },
+      "revId": "70c910a93958fc38d732e7cb52abdff6997ae33d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
