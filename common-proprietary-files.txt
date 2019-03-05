@@ -305,7 +305,7 @@ bin/rmt_storage:vendor/bin/rmt_storage|16712c2d1ce8928c25e4ce97a05105cf7d6e4254
 vendor/lib/libxml.so|f965232d2dcb2a83d2189f4a36df644cd295086f
 
 # Sensors
-lib/hw/sensors.msm8974.so:vendor/lib/hw/sensors.msm8974.so
+vendor/lib/hw/sensors.msm8974.so|f1f3f8a30a95616b1b98dedae92305636aaebc9f
 
 # Time services
 -app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
