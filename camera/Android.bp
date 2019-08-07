@@ -1,0 +1,56 @@
+cc_library_shared {
+    name: "libcamera_client_custom",
+
+    aidl: {
+        include_dirs: [
+            "frameworks/av/camera/aidl",
+            "frameworks/native/aidl/gui",
+        ],
+    },
+
+    srcs: [
+        // AIDL files for camera interfaces
+        ":libcamera_client_aidl",
+
+        // Source for camera interface parcelables, and manually-written interfaces
+        "Camera.cpp",
+        "CameraBase.cpp",
+        "CameraUtils.cpp",
+        "CameraMetadata.cpp",
+        "CameraParameters.cpp",
+        "CameraParameters2.cpp",
+        "CaptureResult.cpp",
+        "camera2/CaptureRequest.cpp",
+        "camera2/OutputConfiguration.cpp",
+        "camera2/SubmitInfo.cpp",
+        "ICamera.cpp",
+        "ICameraClient.cpp",
+        "ICameraRecordingProxy.cpp",
+        "ICameraRecordingProxyListener.cpp",
+        "VendorTagDescriptor.cpp",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libbinder",
+        "libgui",
+        "libcamera_metadata",
+        "libnativewindow",
+    ],
+
+    include_dirs: [
+        "system/media/private/camera/include",
+        "frameworks/av/camera/include/",
+        "frameworks/av/camera/include/camera",
+        "frameworks/native/include/media/openmax",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+    ],
+
+}
