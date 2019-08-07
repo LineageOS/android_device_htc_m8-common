@@ -1,5 +1,5 @@
 cc_library_shared {
-    name: "libcamera_client_custom",
+    name: "libcamera_client_htc",
 
     aidl: {
         export_aidl_headers: true,
@@ -19,6 +19,7 @@ cc_library_shared {
         "CameraUtils.cpp",
         "CameraMetadata.cpp",
         "CameraParameters.cpp",
+        "CameraParameters_EXT.cpp",
         "CameraParameters2.cpp",
         "CaptureResult.cpp",
         "camera2/CaptureRequest.cpp",

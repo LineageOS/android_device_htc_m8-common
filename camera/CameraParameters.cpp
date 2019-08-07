@@ -173,8 +173,43 @@ const char CameraParameters::FOCUS_MODE_CONTINUOUS_PICTURE[] = "continuous-pictu
 const char CameraParameters::LIGHTFX_LOWLIGHT[] = "low-light";
 const char CameraParameters::LIGHTFX_HDR[] = "high-dynamic-range";
 
+// HTC values
+const char CameraParameters::KEY_CONTI_BURST_STATE[] = "contiburst-state";
+const char CameraParameters::SCENE_MODE_TEXT[] = "text";
+const char CameraParameters::CONTI_BURST_CAPTURING[] = "contiburst-capturing";
+const char CameraParameters::CONTI_BURST_CAPTURE_DONE[] = "contiburst-done";
+const char CameraParameters::KEY_GPU_EFFECT[] = "GPU-effect";
+const char CameraParameters::KEY_GPU_EFFECT_PARAM_0[] = "GE-param0";
+const char CameraParameters::KEY_GPU_EFFECT_PARAM_1[] = "GE-param1";
+const char CameraParameters::KEY_GPU_EFFECT_PARAM_2[] = "GE-param2";
+const char CameraParameters::KEY_GPU_EFFECT_PARAM_3[] = "GE-param3";
+const char CameraParameters::KEY_FORCE_USE_AUDIO_ENABLED[] = "forceuseaudio";
+const char CameraParameters::KEY_ZSL[] = "zsl";
+const char CameraParameters::KEY_CAMERA_MODE[] = "camera-mode";
+const char CameraParameters::KEY_SMILEINFO_BYFACE_SUPPORTED[] = "smileinfo-byface-supported";
+const char CameraParameters::ZSL_OFF[] = "off";
+
+static String8 get_forced_value(String8 key, String8 value)
+{
+    if (key == "face-detection-values") return String8("off");
+    if (key == "face-detection") return String8("off");
+    return value;
+}
+
+static void add(DefaultKeyedVector<String8,String8> &map, String8 key, String8 value)
+{
+    value = get_forced_value(key, value);
+    map.add(key, value);
+}
+
+static void replaceValueFor(DefaultKeyedVector<String8,String8> &map, String8 key, String8 value)
+{
+    value = get_forced_value(key, value);
+    map.replaceValueFor(key, value);
+}
+
 CameraParameters::CameraParameters()
-                : mMap()
+                : CameraParameters_EXT(this), mMap()
 {
 }
 
@@ -224,12 +259,12 @@ void CameraParameters::unflatten(const String8 &params)
         if (b == 0) {
             // If there's no semicolon, this is the last item.
             String8 v(a);
-            mMap.add(k, v);
+            add(mMap, k, v);
             break;
         }
 
         String8 v(a, (size_t)(b-a));
-        mMap.add(k, v);
+        add(mMap, k, v);
         a = b+1;
     }
 }
@@ -251,7 +286,7 @@ void CameraParameters::set(const char *key, const char *value)
         return;
     }
 
-    mMap.replaceValueFor(String8(key), String8(value));
+    replaceValueFor(mMap, String8(key), String8(value));
 }
 
 void CameraParameters::set(const char *key, int value)
@@ -536,5 +571,16 @@ int CameraParameters::previewFormatToEnum(const char* format) {
 bool CameraParameters::isEmpty() const {
     return mMap.isEmpty();
 }
+
+
+void CameraParameters::getBrightnessLumaTargetSet(int *magic __unused, int *sauce __unused) const{};
+void CameraParameters::setBrightnessLumaTargetSet(int brightness, int luma) {
+    char str[32];
+    snprintf(str, sizeof(str),"%d,%d", brightness, luma);
+    set("brightness-luma-target-set", str);
+};
+void CameraParameters::getRawSize(int *magic __unused, int *sauce __unused) const{};
+void CameraParameters::setZsl(const char *sauce) { set("zsl",sauce);};
+const char *CameraParameters::getZsl() const { return get("zsl");};
 
 }; // namespace android
