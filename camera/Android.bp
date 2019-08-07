@@ -1,0 +1,69 @@
+// Copyright 2010 The Android Open Source Project
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+cc_library_shared {
+    name: "libcamera_client",
+
+    aidl: {
+        include_dirs: [
+            "frameworks/av/camera/aidl",
+            "frameworks/native/aidl/gui",
+        ],
+    },
+
+    srcs: [
+        ":libcamera_client_aidl",
+
+        // Source for camera interface parcelables, and manually-written interfaces
+        "Camera.cpp",
+        "CameraBase.cpp",
+        "CameraUtils.cpp",
+        "CameraMetadata.cpp",
+        "CaptureResult.cpp",
+        "CameraParameters.cpp",
+        "CameraParameters2.cpp",
+        "ICamera.cpp",
+        "ICameraClient.cpp",
+        "ICameraRecordingProxy.cpp",
+        "ICameraRecordingProxyListener.cpp",
+        "CaptureRequest.cpp",
+        "OutputConfiguration.cpp",
+        "SubmitInfo.cpp",
+        "VendorTagDescriptor.cpp",
+    ],
+
+    shared_libs: [
+        "libcutils",
+        "libutils",
+        "liblog",
+        "libbinder",
+        "libgui",
+        "libcamera_metadata",
+        "libnativewindow",
+    ],
+
+    include_dirs: [
+        "device/htc/m8-common/camera/include",
+        "system/media/private/camera/include",
+        "frameworks/av/camera/include/",
+        "frameworks/native/include/media/openmax",
+    ],
+
+    cflags: [
+        "-Werror",
+        "-Wall",
+        "-Wextra",
+    ],
+
+}
