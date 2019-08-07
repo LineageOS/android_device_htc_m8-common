@@ -1,5 +1,5 @@
 cc_library_shared {
-    name: "libcamera_client_custom",
+    name: "libcamera_client_htc",
 
     aidl: {
         include_dirs: [
@@ -14,6 +14,7 @@ cc_library_shared {
         "CameraUtils.cpp",
         "CameraMetadata.cpp",
         "CameraParameters.cpp",
+        "CameraParameters_EXT.cpp",
         "CaptureResult.cpp",
         "ICamera.cpp",
         "ICameraClient.cpp",
@@ -33,6 +34,7 @@ cc_library_shared {
     ],
 
     include_dirs: [
+        "device/htc/m8-common/camera/include",
         "system/media/private/camera/include",
         "frameworks/av/camera/include/",
     ],
