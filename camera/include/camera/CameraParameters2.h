@@ -1,0 +1,1 @@
+../../../../../../frameworks/av/camera/include/camera/CameraParameters2.h
