@@ -1,5 +1,5 @@
 cc_library_shared {
-    name: "libcamera_client_custom",
+    name: "libcamera_client_htc",
 
     aidl: {
         include_dirs: [
@@ -15,6 +15,7 @@ cc_library_shared {
         "CameraMetadata.cpp",
         "CaptureResult.cpp",
         "CameraParameters.cpp",
+        "CameraParameters_EXT.cpp",
         "ICamera.cpp",
         "ICameraClient.cpp",
         "ICameraRecordingProxy.cpp",
