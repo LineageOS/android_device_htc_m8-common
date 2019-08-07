@@ -36,7 +36,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8974
+    camera.msm8974 \
+    libcamera_client_htc.so
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \

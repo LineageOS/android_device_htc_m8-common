@@ -581,13 +581,13 @@ bool CameraParameters::isEmpty() const {
 }
 
 
-void CameraParameters::getBrightnessLumaTargetSet(int *magic, int *sauce) const{};
+void CameraParameters::getBrightnessLumaTargetSet(int *magic __unused, int *sauce __unused) const{};
 void CameraParameters::setBrightnessLumaTargetSet(int brightness, int luma) {
     char str[32];
     snprintf(str, sizeof(str),"%d,%d", brightness, luma);
     set("brightness-luma-target-set", str);
 };
-void CameraParameters::getRawSize(int *magic, int *sauce) const{};
+void CameraParameters::getRawSize(int *magic __unused, int *sauce __unused) const{};
 void CameraParameters::setZsl(const char *sauce) { set("zsl",sauce);};
 const char *CameraParameters::getZsl() const { return get("zsl");};
 
