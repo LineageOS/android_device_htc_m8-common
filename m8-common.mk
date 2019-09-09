@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015-2016 The CyanogenMod Project
-#               2017-2018 The LineageOS Project
+#               2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
 $(call inherit-product-if-exists, vendor/htc/m8-common/m8-common-vendor.mk)
 
 # Inherit from msm8974-common
