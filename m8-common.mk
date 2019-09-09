@@ -62,6 +62,9 @@ PRODUCT_PACKAGES += \
     libnfc_jni \
     Nfc
 
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 19
+
 # Variant linking script
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/variant_script.sh:install/bin/variant_script.sh
