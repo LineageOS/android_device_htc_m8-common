@@ -10,7 +10,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_STATIC_LIBRARIES := libbase libarect
 LOCAL_SHARED_LIBRARIES := \
-    libhardware liblog libcamera_client_htc libutils libcutils libdl \
+    libhardware liblog libcamera_client_htc libutils libgui \
     android.hidl.token@1.0-utils \
     android.hardware.graphics.bufferqueue@1.0
 
