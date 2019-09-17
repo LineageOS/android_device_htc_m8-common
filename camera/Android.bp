@@ -24,6 +24,7 @@ cc_library_shared {
         "CaptureResult.cpp",
         "camera2/CaptureRequest.cpp",
         "camera2/OutputConfiguration.cpp",
+        "camera2/SessionConfiguration.cpp",
         "camera2/SubmitInfo.cpp",
         "ICamera.cpp",
         "ICameraClient.cpp",
