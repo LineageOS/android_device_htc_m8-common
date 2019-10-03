@@ -21,8 +21,15 @@ set -e
 # Helper functions
 copy()
 {
-  LD_LIBRARY_PATH=/system/lib /system/bin/toybox cp --preserve=a "$1" "$2"
+  LD_LIBRARY_PATH=$system_mount/lib $system_mount/bin/toybox cp --preserve=a "$1" "$2"
 }
+
+# Detect where /system is mounted
+if [ -d /system/system ]; then
+  system_mount="/system/system"
+else
+  system_mount="/system"
+fi;
 
 # Detect variant and copy its specific-blobs
 modelid=`getprop ro.boot.mid`
@@ -40,17 +47,17 @@ esac
 
 # Skip copying blobs in case of Dual SIM variants because the files are already in the proper location
 if [ "$variant" == "vzw" ] || [ "$variant" == "spr" ] || [ "$variant" == "gsm" ]; then
-  basedir="/system/vendor/blobs/$variant/"
+  basedir="$system_mount/vendor/blobs/$variant/"
   if [ -d $basedir ]; then
     cd $basedir
 
     for file in `find . -type f` ; do
-      mkdir -p `dirname /system/vendor/$file`
-      copy $file /system/vendor/$file
+      mkdir -p `dirname $system_mount/vendor/$file`
+      copy $file $system_mount/vendor/$file
     done
 
     for file in bin/* ; do
-      chmod 755 /system/vendor/$file
+      chmod 755 $system_mount/vendor/$file
     done
   else
     echo "Expected source directory does not exist!"
