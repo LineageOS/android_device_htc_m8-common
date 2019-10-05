@@ -300,8 +300,16 @@ vendor/lib/libsmemlog.so|6cd513534820f320b8a9369fde8b75f153ee67d0
 vendor/lib/libsystem_health_mon.so|8bf18322c3ce31eaa032bcc736419bd5a2c95a71
 
 # RIL - pinned to HTC package 6.12.401.4 version
+bin/netmgrd:vendor/bin/netmgrd|691aba6f3f12d4343942ce4fe94e11855f4c5dd7
+bin/qmuxd:vendor/bin/qmuxd|f503cce81330c5a13c2f5a195ee73efa0516acb0
 bin/radish:vendor/bin/radish|c6390fba7986b738f472a14c69ed0704635a485e
 bin/rmt_storage:vendor/bin/rmt_storage|16712c2d1ce8928c25e4ce97a05105cf7d6e4254
+lib/libmdmdetect.so:vendor/lib/libmdmdetect.so|6cd17750b5b1ce764323b9789891215b88e75310
+vendor/lib/libcneapiclient.so:vendor/lib/libcneapiclient.so|7e0460cf5fdd079d384836d581117ba25bd882db
+vendor/lib/libconfigdb.so:vendor/lib/libconfigdb.so|a46a022878d56850716f4e2f7b34cf25e1f42ea3
+vendor/lib/libnetmgr.so:vendor/lib/libnetmgr.so|778e3550756b7acbbc3b529d487e2554973e1032
+vendor/lib/libperipheral_client.so:vendor/lib/libperipheral_client.so|dd9a435495de6325b5f20d47560e54a6f9155e0f
+vendor/lib/libril-qcril-hook-oem.so:vendor/lib/libril-qcril-hook-oem.so|af8470e26db0e72810f8e6f72752270e7ab2ff54
 vendor/lib/libxml.so|f965232d2dcb2a83d2189f4a36df644cd295086f
 
 # Sensors
