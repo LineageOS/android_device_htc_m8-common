@@ -10,6 +10,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    nfc.isodep_extended_length_supported=true
+
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-07-01
