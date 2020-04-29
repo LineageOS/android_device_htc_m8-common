@@ -6,6 +6,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.maxopen=3
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    nfc.isodep_extended_length_supported=true
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqti-perfd-client.so
