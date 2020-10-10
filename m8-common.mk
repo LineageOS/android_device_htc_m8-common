@@ -56,9 +56,9 @@ PRODUCT_BOOT_JARS += \
     htcirlibs
 
 # NFC
-PRODUCT_PACKAGES += \
-    nfc.msm8974 \
-    libnfc \
-    libnfc_ndef \
-    libnfc_jni \
-    Nfc
+#PRODUCT_PACKAGES += \
+#    nfc.msm8974 \
+#    libnfc \
+#    libnfc_ndef \
+#    libnfc_jni \
+#    Nfc
