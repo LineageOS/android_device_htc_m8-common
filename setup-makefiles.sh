@@ -54,3 +54,5 @@ write_makefiles "$MY_DIR"/../$DEVICE/device-proprietary-files.txt
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
 write_footers
+
+./../msm8974-common/setup-makefiles.sh $@
