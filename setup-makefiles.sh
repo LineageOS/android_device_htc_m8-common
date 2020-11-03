@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+#               2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -54,3 +54,5 @@ write_makefiles "$MY_DIR"/../$DEVICE/device-proprietary-files.txt
 write_makefiles "$MY_DIR"/proprietary-files.txt
 
 write_footers
+
+./../msm8974-common/setup-makefiles.sh $@
