@@ -5,6 +5,8 @@ LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/include \
     system/media/camera/include
 
+#LOCAL_CFLAGS := -DLOG_PARAMETERS
+
 LOCAL_SRC_FILES := \
     CameraWrapper.cpp
 
