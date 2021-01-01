@@ -18,41 +18,7 @@
 
 set -e
 
-INITIAL_COPYRIGHT_YEAR=2014
+export BOARD_COMMON=msm8974-common
+export DEVICE_COMMON_GUARDS="m8 m8d"
 
-# Load extract_utils and do some sanity checks
-MY_DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
-
-LINEAGE_ROOT="$MY_DIR"/../../..
-
-HELPER="$LINEAGE_ROOT"/vendor/lineage/build/tools/extract_utils.sh
-if [ ! -f "$HELPER" ]; then
-    echo "Unable to find helper script at $HELPER"
-    exit 1
-fi
-. "$HELPER"
-
-# Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
-
-# Copyright headers and common guards
-write_headers "m8 m8d"
-
-write_makefiles "$MY_DIR"/common-proprietary-files.txt
-
-write_footers
-
-# Reinitialize the helper for device
-INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
-
-# Copyright headers and guards
-write_headers
-
-write_makefiles "$MY_DIR"/../$DEVICE/device-proprietary-files.txt
-write_makefiles "$MY_DIR"/proprietary-files.txt
-
-write_footers
-
-./../msm8974-common/setup-makefiles.sh $@
+./../$BOARD_COMMON/setup-makefiles.sh $@
