@@ -47,4 +47,4 @@ BOARD_NFC_HAL_SUFFIX := msm8974
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/m8-common/releasetools
 
 # Inherit from the proprietary version
--include vendor/htc/m8-common/BoardConfigVendor.mk
+include vendor/htc/m8-common/BoardConfigVendor.mk
