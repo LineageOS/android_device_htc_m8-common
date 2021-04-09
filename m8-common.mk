@@ -16,7 +16,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
-$(call inherit-product-if-exists, vendor/htc/m8-common/m8-common-vendor.mk)
+$(call inherit-product, vendor/htc/m8-common/m8-common-vendor.mk)
 
 # Inherit from msm8974-common
 $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
