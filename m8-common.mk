@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015-2016 The CyanogenMod Project
-#               2017-2020 The LineageOS Project
+#               2017-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ $(call inherit-product, vendor/htc/m8-common/m8-common-vendor.mk)
 $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 
 # System properties
--include $(LOCAL_PATH)/system_prop.mk
+include $(LOCAL_PATH)/system_prop.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
