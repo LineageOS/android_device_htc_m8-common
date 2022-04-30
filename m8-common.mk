@@ -22,7 +22,7 @@ $(call inherit-product, vendor/htc/m8-common/m8-common-vendor.mk)
 $(call inherit-product, device/htc/msm8974-common/msm8974-common.mk)
 
 # System properties
--include $(LOCAL_PATH)/system_prop.mk
+include $(LOCAL_PATH)/system_prop.mk
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
