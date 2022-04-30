@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2015-2016 The CyanogenMod Project
-#               2017-2019 The LineageOS Project
+#               2017-2019,2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@
 # against the traditional rules of inheritance).
 
 # Inherit from common msm8974-common
--include device/htc/msm8974-common/BoardConfigCommon.mk
+include device/htc/msm8974-common/BoardConfigCommon.mk
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= device/htc/m8-common/board-info.txt
